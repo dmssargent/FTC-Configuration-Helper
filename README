@@ -1,6 +1,6 @@
 ***THIS IS A DEVELOPMENT VERSION!***
-?
-v0.01
+FTC-Configuration-Helper
+v0.1
 
 -- USE --
 	This provides a wrapper to netsh commands and a basic robot 
