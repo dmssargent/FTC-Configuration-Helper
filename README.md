@@ -22,14 +22,18 @@ variables when need be.
    or you can right-click on `configure.bat`, and click **Run as adminstrator**
    
    After that you can type (in Command Prompt):
-   
-	`wlan-dev setup`
-	
+   ```Batchfile
+	wlan-dev setup
+	```
 	To start the development Wireless Network:
-	`wlan-dev start`
-	
+	```Batchfile
+	wlan-dev start
+	```
+	```Batchfile
 	To stop the development Wireless Network:
-	`wlan-dev stop`
+	```Batchfile
+	wlan-dev stop
+	```
 	
 #### Advanced Usage
  --skip-checks
