@@ -8,6 +8,7 @@ variables when need be.
 
 #### Usage
   In Command Prompt (running as a Administrator) go to where you cloned the repo (via the cd command)
+  
   *i.e* if it is in your Downloads folder, type:
   ```Batchfile
 	cd %userprofile%\Downloads\FTC-Configuration-Helper
@@ -21,6 +22,7 @@ variables when need be.
    or you can right-click on `configure.bat`, and click **Run as adminstrator**
    
    After that you can type (in Command Prompt):
+   
 	`wlan-dev setup`
 	
 	To start the development Wireless Network:
