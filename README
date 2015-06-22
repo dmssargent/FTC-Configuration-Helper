@@ -5,7 +5,7 @@ v0.1
 -- USE --
 	This provides a wrapper to netsh commands and a basic robot 
 	development system check. It provides automatically generated
-	variaables when need be.
+	variables when need be.
 	
 -- USAGE --
 	--skip-checks
