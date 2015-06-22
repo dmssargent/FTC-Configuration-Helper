@@ -1,19 +1,44 @@
 # FTC Configuration Helper
 *v0.1*
 
-#### USE
+#### Use
 This provides a wrapper to netsh commands and a basic robot 
 development system check. It provides automatically generated
 variables when need be.
+
+#### Usage
+  In Command Prompt (running as a Administrator) go to where you cloned the repo (via the cd command)
+  *i.e* if it is in your Downloads folder, type:
+  ```Batchfile
+	cd %userprofile%\Downloads\FTC-Configuration-Helper
+  ```
+  
+  Then to start the configuration process, type:
+  ```Batchfile
+	configure
+   ```
+   
+   or you can right-click on `configure.bat`, and click **Run as adminstrator**
+   
+   After that you can type (in Command Prompt):
+	`wlan-dev setup`
 	
-#### USAGE
- --skip-checks 
-	Disables ALL checks on system configuration, and builds a WLAN status file
+	To start the development Wireless Network:
+	`wlan-dev start`
+	
+	To stop the development Wireless Network:
+	`wlan-dev stop`
+	
+#### Advanced Usage
+ --skip-checks
+ 
+	> Disables ALL checks on system configuration, and builds a WLAN status file
 
  -help | -h | -?
-	Displays help
+ 
+	> Displays help
 
-#### LICENSE
+#### License
 Anyone is free to copy, modify, publish, use, compile, sell, or
 distribute this software, either in source code form or as a compiled
 binary, for any purpose, commercial or non-commercial, and by any
