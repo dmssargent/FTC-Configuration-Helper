@@ -7,11 +7,11 @@ development system check. It provides automatically generated
 variables when need be.
 	
 #### USAGE
-- --skip-checks
-	- Disables ALL checks on system configuration, and builds a WLAN status file
+ --skip-checks 
+	Disables ALL checks on system configuration, and builds a WLAN status file
 
-- -help | -h | -?
-	- Displays help
+ -help | -h | -?
+	Displays help
 
 #### LICENSE
 Anyone is free to copy, modify, publish, use, compile, sell, or
