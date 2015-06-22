@@ -23,13 +23,15 @@ variables when need be.
    
    After that you can type (in Command Prompt):
    
-	`wlan-dev setup`
+	wlan-dev setup
 	
 	To start the development Wireless Network:
-	`wlan-dev start`
+	
+	wlan-dev start
 	
 	To stop the development Wireless Network:
-	`wlan-dev stop`
+	
+	wlan-dev stop
 	
 #### Advanced Usage
  --skip-checks
