@@ -1,0 +1,4 @@
+
+@rem --- BEGIN SCRIPT ---
+@echo off
+setlocal enabledelayedexpansion

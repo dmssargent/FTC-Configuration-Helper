@@ -1,0 +1,7 @@
+
+@rem --- END SCRIPT ---
+:abort
+	exit /b 1
+	
+:exit
+	exit /b

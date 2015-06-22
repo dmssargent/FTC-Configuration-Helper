@@ -1,0 +1,14 @@
+:start
+	echo Starting development WLAN...
+	netsh wlan start hostednetwork
+	if %errorlevel% == 0 (
+		echo Success!
+		goto :exit
+	) else (
+		echo Failed!
+		goto :abort
+	)
+	
+	rem Pick up anything strange
+	goto :abort
+	

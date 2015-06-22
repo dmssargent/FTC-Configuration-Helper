@@ -1,0 +1,74 @@
+:setup
+	if "%WLAN_SSID%" == "" (
+		goto :setup_error
+	)
+	
+	if "%WLAN_KEY%" == "" (
+		goto :setup_error
+	)
+	
+	echo %COMPUTER_IP%
+	if not "%COMPUTER_IP%" == "DHCP " (
+		goto :setup_advanced
+	)
+	echo %ROBOT_IP%
+	if not "%ROBOT_IP%" == "DHCP " (
+		goto :setup_advanced
+	)
+	echo %DRIVER_IP%
+	if not "%DRIVER_IP%" == "DHCP " (
+		goto :setup_advanced
+	)
+	
+	netsh wlan set hostednetwork mode=allow ssid=%WLAN_SSID% key=%WLAN_KEY% > nul
+	if not "%errorlevel%" == "0" (
+		echo An error occurred configuring Wi-fi.
+		goto :abort
+	)
+	
+	echo Success^^!
+	goto :exit
+	
+:setup_advanced
+	echo NOTICE: Entering advanced setup...
+	netsh wlan set hostednetwork mode=allow ssid=%WLAN_SSID% key=%WLAN_KEY% > nul
+	if not "%errorlevel%" == "0" (
+		echo An error occurred configuring Wi-fi.
+		goto :abort
+	)
+	
+	echo Building pseduo development WLAN adapter...
+	netsh wlan start hostednetwork >nul
+	echo Done!
+	
+	if not "%COMPUTER_IP%" == "DHCP " (
+		echo Please choose your pseduo development WLAN adapter:
+		echo  --- Possible choices include:
+		ipconfig | findstr *
+		set /p IF_LINK=Name: 
+		netsh interface ipv4 set address name="%IF_LINK%" static %COMPUTER_IP% 255.255.255.0
+	)
+	
+	if not "%errorlevel%" == "0" (
+		echo An error occurred configuring Wi-fi.
+		goto :abort
+	)
+	
+	if not "%DRIVER_IP%" == "DHCP " (
+		if not "%PHONE_IP%" == "DHCP " (
+			call .\configure.devices
+		)
+		rem Else falls out in to next if statement
+	)
+	
+	if not "%PHONE_IP%" == "DHCP " (
+		call .\configure.devices
+	)
+	
+	netsh wlan stop hostednetwork
+	goto :exit
+	
+:setup_error
+	echo Invalid Configuration. PLease re-run "./configure.status" to reset it.
+	echo Config: SSID:%WLAN_SSID%	Key:%WLAN_KEY%
+	goto :abort
