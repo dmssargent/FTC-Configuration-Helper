@@ -7,16 +7,16 @@
 		goto :setup_error
 	)
 	
-	echo %COMPUTER_IP%
-	if not "%COMPUTER_IP%" == "DHCP " (
+
+	if not "%COMPUTER_IP%" == "DHCP" (
 		goto :setup_advanced
 	)
-	echo %ROBOT_IP%
-	if not "%ROBOT_IP%" == "DHCP " (
+
+	if not "%ROBOT_IP%" == "DHCP" (
 		goto :setup_advanced
 	)
-	echo %DRIVER_IP%
-	if not "%DRIVER_IP%" == "DHCP " (
+
+	if not "%DRIVER_IP%" == "DHCP" (
 		goto :setup_advanced
 	)
 	
@@ -41,7 +41,7 @@
 	netsh wlan start hostednetwork >nul
 	echo Done!
 	
-	if not "%COMPUTER_IP%" == "DHCP " (
+	if not "%COMPUTER_IP%" == "DHCP" (
 		echo Please choose your pseduo development WLAN adapter:
 		echo  --- Possible choices include:
 		ipconfig | findstr *
@@ -54,14 +54,14 @@
 		goto :abort
 	)
 	
-	if not "%DRIVER_IP%" == "DHCP " (
-		if not "%PHONE_IP%" == "DHCP " (
+	if not "%DRIVER_IP%" == "DHCP" (
+		if not "%PHONE_IP%" == "DHCP" (
 			call .\configure.devices
 		)
 		rem Else falls out in to next if statement
 	)
 	
-	if not "%PHONE_IP%" == "DHCP " (
+	if not "%PHONE_IP%" == "DHCP" (
 		call .\configure.devices
 	)
 	

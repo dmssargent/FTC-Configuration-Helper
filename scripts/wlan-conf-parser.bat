@@ -35,14 +35,23 @@ rem This parses the wlan.conf file
 	set /p TEAM_NUMBER=
 	set /p ANDROID_HOME=
 )
-
-call :FIND_KEY %WLAN_SSID%
+call :trim_whitespace %COMPUTER_IP% %ROBOT_IP% %DRIVER_IP% %WLAN_SSID% %TEAM_NUMBER% %ANDROID_HOME%
+call :find_key
 
 goto :exit
-rem Based on the above this finds the WIFI key.
 
-:FIND_KEY
-set WLAN_SSID=%1
+rem This trims the whitespace the may a have gotten added during a saving
+:trim_whitespace
+	set COMPUTER_IP=%1
+	set ROBOT_IP=%2
+	set DRIVER_IP=%3
+	set WLAN_SSID=%4
+	set TEAM_NUMBER=%5
+	set ANDROID_HOME=%6
+	goto :EOF
+
+rem Based on the above this finds the WIFI key.
+:find_key
 set WLAN_KEY_FILE=%~dp0..\%WLAN_SSID%.key
 if not exist %WLAN_KEY_FILE% (
 	echo ERROR: Cannot find the key file.
