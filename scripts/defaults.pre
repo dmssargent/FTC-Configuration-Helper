@@ -2,3 +2,10 @@
 @rem --- BEGIN SCRIPT ---
 @echo off
 setlocal enabledelayedexpansion
+
+rem Check for any help arguments passed
+
+call %~dp0\includes\check_help_args.bat %1
+if %errorlevel% == 0 (
+	goto :help
+)

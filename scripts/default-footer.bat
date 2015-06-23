@@ -27,6 +27,11 @@ setlocal enabledelayedexpansion
 
 set FILE=
 
+call %~dp0\includes\check_help_args.bat %1
+if %errorlevel% == 0 (
+	goto :help
+)
+
 
 if "%~1"=="" (
 	echo ERROR: please specify a filename
@@ -60,9 +65,14 @@ if not %errorlevel% == 0 (
 rem Done!
 goto :exit
 
+
+:help
+	more %~dp0docs\README\%~n0
+	goto :exit
+
+@rem --- END SCRIPT ---
 :abort
 	exit /b 1
 	
 :exit
 	exit /b
-	

@@ -25,17 +25,30 @@
 @echo off
 setlocal enabledelayedexpansion
 
+call %~dp0\toupper.bat "%1"
+set TEST_ARG=%TOUPPERED%
+set TOUPPERED=
+
 :check_for_help
-	if "%1" == "-h" (
+	if %TEST_ARG% == "-H" (
 		goto :help
 	)
-	if "%1" == "-help" (
+	if %TEST_ARG% == "-HELP" (
 		goto :help
 	)
-	if "%1" == "/help" (
+	if %TEST_ARG% == "/HELP" (
 		goto :help
 	)
-	if "%1" == "-?" (
+	
+	if %TEST_ARG% == "/H" (
+		goto :help
+	)
+	
+	if %TEST_ARG% == "/?" (
+		goto :help
+	)
+	
+	if %TEST_ARG% == "-?" (
 		goto :help
 	)
 
