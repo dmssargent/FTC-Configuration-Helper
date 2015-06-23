@@ -7,40 +7,40 @@ development system check. It provides automatically generated
 variables when need be.
 
 #### Usage
-  In Command Prompt (running as a Administrator) go to where you cloned the repo (via the cd command)
-  
-  *i.e* if it is in your Downloads folder, type:
-  ```Batchfile
-	cd %userprofile%\Downloads\FTC-Configuration-Helper
-  ```
-  
-  Then to start the configuration process, type:
-  ```Batchfile
-	configure
-   ```
-   
-   or you can right-click on `configure.bat`, and click **Run as adminstrator**
-   
-   After that you can type (in Command Prompt):
-   
-	wlan-dev setup
-	
-	To start the development Wireless Network:
-	
-	wlan-dev start
-	
-	To stop the development Wireless Network:
-	
-	wlan-dev stop
-	
-#### Advanced Usage
- --skip-checks
- 
-	> Disables ALL checks on system configuration, and builds a WLAN status file
+In Command Prompt (running as a Administrator) go to where you cloned the repo (via the cd command)
 
- -help | -h | -?
- 
-	> Displays help
+*i.e* if it is in your Downloads folder, type:
+```Batchfile
+cd %userprofile%\Downloads\FTC-Configuration-Helper
+```
+
+Then to start the configuration process, type:
+```Batchfile
+configure
+```
+
+or you can right-click on `configure.bat`, and click **Run as adminstrator**
+
+After that you can type (in Command Prompt):
+
+wlan-dev setup
+
+To start the development Wireless Network:
+
+wlan-dev start
+
+To stop the development Wireless Network:
+
+wlan-dev stop
+
+#### Advanced Usage
+--skip-checks
+
+> Disables ALL checks on system configuration, and builds a WLAN status file
+
+-help | -h | -?
+
+> Displays help
 
 #### License
 Anyone is free to copy, modify, publish, use, compile, sell, or
