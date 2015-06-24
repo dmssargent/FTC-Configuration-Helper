@@ -316,7 +316,7 @@ rem Have android.bat show updates
 	echo Writing configure.status...
 	set STATUS_FILE=configure.status.bat
 	
-	> %STATUS_FILE%  type .\scripts\LICENSE.stc  
+	> %STATUS_FILE%  type .\windows\scripts\LICENSE.stc  
 	>> %STATUS_FILE% echo @cmd /c
 	>> %STATUS_FILE% echo @echo off
 	>> %STATUS_FILE% echo setlocal enabledelayedexpansion
@@ -365,11 +365,11 @@ rem Have android.bat show updates
 	>> %STATUS_FILE% echo echo Done^^^^^^^^^^!
 	>> %STATUS_FILE% echo echo Creating WLAN setup, start, and start.
 	>> %STATUS_FILE% echo set WLAN_DEV_EXEC=.\wlan-dev.bat
-	>> %STATUS_FILE% echo call .\scripts\default-header -f %%WLAN_DEV_EXEC%%
+	>> %STATUS_FILE% echo call .\windows\scripts\default-header -f %%WLAN_DEV_EXEC%%
 	rem TODO: Modularize this section
 	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% echo.
 	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% echo rem Build variables
-	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% echo call .\scripts\wlan-conf-parser.bat
+	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% echo call .\windows\scripts\wlan-conf-parser.bat
 	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% echo :parse-args
 	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% echo 	if "%%%%1" == "start" (
 	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% echo		goto :start
@@ -383,13 +383,13 @@ rem Have android.bat show updates
 	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% echo 	rem Invalid command, display help
 	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% echo 	goto :help
 	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% echo.
-	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% type .\scripts\start-wlan.stc
-	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% type .\scripts\stop-wlan.stc
-	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% type .\scripts\setup-wlan.stc
-	>> %STATUS_FILE% echo call .\scripts\default-footer %%WLAN_DEV_EXEC%%
+	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% type .\windows\scripts\start-wlan.stc
+	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% type .\windows\scripts\stop-wlan.stc
+	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% type .\windows\scripts\setup-wlan.stc
+	>> %STATUS_FILE% echo call .\windows\scripts\default-footer %%WLAN_DEV_EXEC%%
 	
 	>> %STATUS_FILE% echo goto :exit	
-	call .\scripts\default-footer.bat %STATUS_FILE%
+	call .\windows\scripts\default-footer.bat %STATUS_FILE%
 	>> %STATUS_FILE% echo echo Done^^^^^^^^^^!
 	echo Done^^!
 	call %STATUS_FILE%
