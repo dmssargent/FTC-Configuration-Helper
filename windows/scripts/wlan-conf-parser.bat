@@ -24,7 +24,8 @@
 @rem --- BEGIN SCRIPT ---
 @echo off
 
-set WLAN_CONF_FILE=%~dp0..\wlan.conf
+rem This should find the wlan.conf file in the root of this repo
+set WLAN_CONF_FILE=%~dp0..\..\wlan.conf
 rem This parses the wlan.conf file
 < %WLAN_CONF_FILE% (
 	set /p WARNING=
