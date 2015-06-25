@@ -16,6 +16,9 @@ case $OS in
 		apt-get moo
 		echo "...and that's what they mean be having \"Super Cow Powers\""
 	;;
+	Fedora)
+		echo "..found Fedora"
+		echo "Just adding a Fedora test"
 	*)
 		echo "Unknown Distro, as of now"
 	;;
