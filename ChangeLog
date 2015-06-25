@@ -1,0 +1,6 @@
+v0.15
+- Added extremely limited *nix support
+- Rebuild the directory layout to optimize cross-platform development
+
+v0.1
+- First release

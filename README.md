@@ -1,5 +1,5 @@
 # FTC Configuration Helper
-*v0.1*
+*v0.15*
 
 #### Use
 This provides a wrapper to netsh commands and a basic robot 
@@ -16,7 +16,7 @@ cd %userprofile%\Downloads\FTC-Configuration-Helper
 
 Then to start the configuration process, type:
 ```Batchfile
-configure
+configure.win32
 ```
 
 or you can right-click on `configure.bat`, and click **Run as adminstrator**
@@ -33,6 +33,9 @@ To stop the development Wireless Network:
 
 wlan-dev stop
 
+For Linux:
+	Still deciding, try starting by looking for either a ./configure.unix.sh or ./configure
+	
 #### Advanced Usage
 --skip-checks
 
@@ -43,6 +46,7 @@ wlan-dev stop
 > Displays help
 
 #### License
+**Please read the LICENSE file for update**
 Anyone is free to copy, modify, publish, use, compile, sell, or
 distribute this software, either in source code form or as a compiled
 binary, for any purpose, commercial or non-commercial, and by any

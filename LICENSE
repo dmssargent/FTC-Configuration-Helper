@@ -1,3 +1,6 @@
+****
+Currently for Windows, This is the license:
+****
 Anyone is free to copy, modify, publish, use, compile, sell, or
 distribute this software, either in source code form or as a compiled
 binary, for any purpose, commercial or non-commercial, and by any
@@ -20,3 +23,7 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
+
+****
+For *nix systems, this is the required license. IT WILL eventually replace the Windows License.
+****
