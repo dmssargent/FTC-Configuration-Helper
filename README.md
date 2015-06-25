@@ -34,7 +34,8 @@ To stop the development Wireless Network:
 wlan-dev stop
 
 For Linux:
-	Still deciding, try starting by looking for either a ./configure.unix.sh or ./configure
+
+>	Still deciding, try starting by looking for either a ./configure.unix.sh or ./configure
 	
 #### Advanced Usage
 --skip-checks
@@ -47,6 +48,7 @@ For Linux:
 
 #### License
 **Please read the LICENSE file for update**
+
 Anyone is free to copy, modify, publish, use, compile, sell, or
 distribute this software, either in source code form or as a compiled
 binary, for any purpose, commercial or non-commercial, and by any
