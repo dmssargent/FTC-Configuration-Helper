@@ -1,0 +1,25 @@
+
+if not "%ROBOT_IP%" == "DHCP" (
+	call :ROBOT_IP_SET
+)
+
+if not "%DRIVER_IP%" == "DHCP" (
+	call :DRIVER_IP_SET
+)
+goto :exit
+
+:DRIVER_IP_SET
+adb kill-server
+echo Waiting for Driver Station via USB...
+adb usb
+adb wait-for-device
+adb shell ip addr add %DRIVER_IP%/24 dev wlan0
+
+
+:ROBOT_IP_SET
+adb kill-server
+echo Waiting for Robot Controller via USB...
+adb usb
+adb wait-for-device
+adb shell ip addr add %ROBOT_IP%/24 dev wlan0
+
