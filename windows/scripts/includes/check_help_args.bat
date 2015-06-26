@@ -27,11 +27,9 @@ if "%TEST_ARG%" == "" (
 )
 
 :check_for_help
-	echo 0
 	if %TEST_ARG% == "-H" (
 		goto :help
 	)
-	echo 1
 	if %TEST_ARG% == "-HELP" (
 		goto :help
 	)
@@ -42,7 +40,7 @@ if "%TEST_ARG%" == "" (
 	if %TEST_ARG% == "/H" (
 		goto :help
 	)
-	
+
 	if %TEST_ARG% == "/?" (
 		goto :help
 	)

@@ -376,9 +376,9 @@ rem Have android.bat show updates
 	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% type .\windows\scripts\setup-wlan.stc
 	>> %STATUS_FILE% echo call .\windows\scripts\default-footer %%WLAN_DEV_EXEC%%
 	>> %STATUS_FILE% echo.
-	>> %STATUS_FILE% echo set CONFIGURE_DEVICES=.\configure.devices
+	>> %STATUS_FILE% echo set CONFIGURE_DEVICES=.\configure.devices.bat
 	>> %STATUS_FILE% echo call .\windows\scripts\default-header -f %%CONFIGURE_DEVICES%%
-	>> %STATUS_FILE% echo ^>^> %%WLAN_DEV_EXEC%% type .\windows\scripts\configure.devices.pre
+	>> %STATUS_FILE% echo ^>^> %%CONFIGURE_DEVICES%% type .\windows\scripts\configure.devices.pre
 	>> %STATUS_FILE% echo call .\windows\scripts\default-footer %%CONFIGURE_DEVICES%%
 	>> %STATUS_FILE% echo goto :exit	
 	call .\windows\scripts\default-footer.bat %STATUS_FILE%
