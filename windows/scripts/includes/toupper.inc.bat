@@ -23,8 +23,12 @@ if "%1" ==  "" (
 	goto :abort
 )
 
+if '%1' == '""' (
+	echo.
+	goto :exit
+)
+
 set TOUPPERED=%1
-echo %1
 CALL :convert TOUPPERED
 echo %TOUPPERED%
 
