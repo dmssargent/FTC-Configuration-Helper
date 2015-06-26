@@ -1,26 +1,18 @@
- 
-@rem Anyone is free to copy, modify, publish, use, compile, sell, or
-@rem distribute this software, either in source code form or as a compiled
-@rem binary, for any purpose, commercial or non-commercial, and by any
-@rem means.
+@rem FTC Configure Helper - this provides some system checks and setup to various operating systems.
+@rem Copyright (C) 2015  David S. - FTC 5395
 @rem 
-@rem In jurisdictions that recognize copyright laws, the author or authors
-@rem of this software dedicate any and all copyright interest in the
-@rem software to the public domain. We make this dedication for the benefit
-@rem of the public at large and to the detriment of our heirs and
-@rem successors. We intend this dedication to be an overt act of
-@rem relinquishment in perpetuity of all present and future rights to this
-@rem software under copyright law.
+@rem This program is free software: you can redistribute it and/or modify
+@rem it under the terms of the GNU General Public License as published by
+@rem the Free Software Foundation, either version 3 of the License, or
+@rem (at your option) any later version.
 @rem 
-@rem THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-@rem EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-@rem MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-@rem IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-@rem OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-@rem ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-@rem OTHER DEALINGS IN THE SOFTWARE.
+@rem This program is distributed in the hope that it will be useful,
+@rem but WITHOUT ANY WARRANTY; without even the implied warranty of
+@rem MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+@rem GNU General Public License for more details.
 @rem 
-@rem For more information, please refer to <http://unlicense.org/>
+@rem You should have received a copy of the GNU General Public License
+@rem along with this program.  If not, see <http://www.gnu.org/licenses/>.
 @rem --- BEGIN SCRIPT ---
 @echo off
 setlocal enabledelayedexpansion
