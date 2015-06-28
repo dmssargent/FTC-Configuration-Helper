@@ -5,16 +5,38 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "gui", "gui.vbproj", "{86CA2F5A-1BF2-4041-B64E-1F2AF663AAA8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "regex", "..\regex\regex.vcxproj", "{B27C89B4-A033-47EB-B27A-72216F904A52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
 		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{86CA2F5A-1BF2-4041-B64E-1F2AF663AAA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{86CA2F5A-1BF2-4041-B64E-1F2AF663AAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86CA2F5A-1BF2-4041-B64E-1F2AF663AAA8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{86CA2F5A-1BF2-4041-B64E-1F2AF663AAA8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{86CA2F5A-1BF2-4041-B64E-1F2AF663AAA8}.Debug|Win32.ActiveCfg = Debug|Any CPU
 		{86CA2F5A-1BF2-4041-B64E-1F2AF663AAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86CA2F5A-1BF2-4041-B64E-1F2AF663AAA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86CA2F5A-1BF2-4041-B64E-1F2AF663AAA8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{86CA2F5A-1BF2-4041-B64E-1F2AF663AAA8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{86CA2F5A-1BF2-4041-B64E-1F2AF663AAA8}.Release|Win32.ActiveCfg = Release|Any CPU
+		{B27C89B4-A033-47EB-B27A-72216F904A52}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{B27C89B4-A033-47EB-B27A-72216F904A52}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{B27C89B4-A033-47EB-B27A-72216F904A52}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{B27C89B4-A033-47EB-B27A-72216F904A52}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B27C89B4-A033-47EB-B27A-72216F904A52}.Debug|Win32.Build.0 = Debug|Win32
+		{B27C89B4-A033-47EB-B27A-72216F904A52}.Release|Any CPU.ActiveCfg = Release|Win32
+		{B27C89B4-A033-47EB-B27A-72216F904A52}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{B27C89B4-A033-47EB-B27A-72216F904A52}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{B27C89B4-A033-47EB-B27A-72216F904A52}.Release|Win32.ActiveCfg = Release|Win32
+		{B27C89B4-A033-47EB-B27A-72216F904A52}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
