@@ -117,4 +117,757 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblJavaLinkDescription.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblJavaLinkDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 59</value>
+  </data>
+  <data name="lblJavaLinkDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 20</value>
+  </data>
+  <data name="lblJavaLinkDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblJavaLinkDescription.Text" xml:space="preserve">
+    <value>Download from here:</value>
+  </data>
+  <data name="&gt;&gt;lblJavaLinkDescription.Name" xml:space="preserve">
+    <value>lblJavaLinkDescription</value>
+  </data>
+  <data name="&gt;&gt;lblJavaLinkDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblJavaLinkDescription.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;lblJavaLinkDescription.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="llblJavaDownload.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="llblJavaDownload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 59</value>
+  </data>
+  <data name="llblJavaDownload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 26</value>
+  </data>
+  <data name="llblJavaDownload.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="llblJavaDownload.Text" xml:space="preserve">
+    <value>Java SE JDK 7 Downloads</value>
+  </data>
+  <data name="&gt;&gt;llblJavaDownload.Name" xml:space="preserve">
+    <value>llblJavaDownload</value>
+  </data>
+  <data name="&gt;&gt;llblJavaDownload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;llblJavaDownload.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;llblJavaDownload.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkAndroidStudioDownload.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkAndroidStudioDownload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 186</value>
+  </data>
+  <data name="chkAndroidStudioDownload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 24</value>
+  </data>
+  <data name="chkAndroidStudioDownload.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="chkAndroidStudioDownload.Text" xml:space="preserve">
+    <value>Install from Internet instead</value>
+  </data>
+  <data name="&gt;&gt;chkAndroidStudioDownload.Name" xml:space="preserve">
+    <value>chkAndroidStudioDownload</value>
+  </data>
+  <data name="&gt;&gt;chkAndroidStudioDownload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkAndroidStudioDownload.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;chkAndroidStudioDownload.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkGitDownload.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkGitDownload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 122</value>
+  </data>
+  <data name="chkGitDownload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 24</value>
+  </data>
+  <data name="chkGitDownload.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="chkGitDownload.Text" xml:space="preserve">
+    <value>Install from Internet instead</value>
+  </data>
+  <data name="&gt;&gt;chkGitDownload.Name" xml:space="preserve">
+    <value>chkGitDownload</value>
+  </data>
+  <data name="&gt;&gt;chkGitDownload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGitDownload.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;chkGitDownload.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtGitSetupPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 88</value>
+  </data>
+  <data name="txtGitSetupPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 28</value>
+  </data>
+  <data name="txtGitSetupPath.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtGitSetupPath.Name" xml:space="preserve">
+    <value>txtGitSetupPath</value>
+  </data>
+  <data name="&gt;&gt;txtGitSetupPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtGitSetupPath.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;txtGitSetupPath.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnInstall.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 210</value>
+  </data>
+  <data name="btnInstall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 56</value>
+  </data>
+  <data name="btnInstall.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnInstall.Text" xml:space="preserve">
+    <value>Install Programs</value>
+  </data>
+  <data name="&gt;&gt;btnInstall.Name" xml:space="preserve">
+    <value>btnInstall</value>
+  </data>
+  <data name="&gt;&gt;btnInstall.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnInstall.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;btnInstall.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnAndroidStudioSetupPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 147</value>
+  </data>
+  <data name="btnAndroidStudioSetupPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 36</value>
+  </data>
+  <data name="btnAndroidStudioSetupPath.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnAndroidStudioSetupPath.Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="&gt;&gt;btnAndroidStudioSetupPath.Name" xml:space="preserve">
+    <value>btnAndroidStudioSetupPath</value>
+  </data>
+  <data name="&gt;&gt;btnAndroidStudioSetupPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAndroidStudioSetupPath.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;btnAndroidStudioSetupPath.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtAndroidStudioISetupPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 152</value>
+  </data>
+  <data name="txtAndroidStudioISetupPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 28</value>
+  </data>
+  <data name="txtAndroidStudioISetupPath.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtAndroidStudioISetupPath.Name" xml:space="preserve">
+    <value>txtAndroidStudioISetupPath</value>
+  </data>
+  <data name="&gt;&gt;txtAndroidStudioISetupPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtAndroidStudioISetupPath.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;txtAndroidStudioISetupPath.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnGitSetupPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>671, 82</value>
+  </data>
+  <data name="btnGitSetupPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 38</value>
+  </data>
+  <data name="btnGitSetupPath.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnGitSetupPath.Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="&gt;&gt;btnGitSetupPath.Name" xml:space="preserve">
+    <value>btnGitSetupPath</value>
+  </data>
+  <data name="&gt;&gt;btnGitSetupPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGitSetupPath.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;btnGitSetupPath.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtJDK_SetupPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 28</value>
+  </data>
+  <data name="txtJDK_SetupPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 28</value>
+  </data>
+  <data name="txtJDK_SetupPath.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtJDK_SetupPath.Name" xml:space="preserve">
+    <value>txtJDK_SetupPath</value>
+  </data>
+  <data name="&gt;&gt;txtJDK_SetupPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtJDK_SetupPath.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;txtJDK_SetupPath.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnJDK_Search.Location" type="System.Drawing.Point, System.Drawing">
+    <value>671, 25</value>
+  </data>
+  <data name="btnJDK_Search.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnJDK_Search.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnJDK_Search.Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="&gt;&gt;btnJDK_Search.Name" xml:space="preserve">
+    <value>btnJDK_Search</value>
+  </data>
+  <data name="&gt;&gt;btnJDK_Search.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnJDK_Search.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;btnJDK_Search.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="chkAndroidStudio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkAndroidStudio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 154</value>
+  </data>
+  <data name="chkAndroidStudio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 24</value>
+  </data>
+  <data name="chkAndroidStudio.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkAndroidStudio.Text" xml:space="preserve">
+    <value>Android Studio</value>
+  </data>
+  <data name="&gt;&gt;chkAndroidStudio.Name" xml:space="preserve">
+    <value>chkAndroidStudio</value>
+  </data>
+  <data name="&gt;&gt;chkAndroidStudio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkAndroidStudio.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;chkAndroidStudio.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="chkGit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkGit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 90</value>
+  </data>
+  <data name="chkGit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 24</value>
+  </data>
+  <data name="chkGit.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chkGit.Text" xml:space="preserve">
+    <value>Git</value>
+  </data>
+  <data name="&gt;&gt;chkGit.Name" xml:space="preserve">
+    <value>chkGit</value>
+  </data>
+  <data name="&gt;&gt;chkGit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGit.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;chkGit.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="chkJDK.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkJDK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 31</value>
+  </data>
+  <data name="chkJDK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="chkJDK.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkJDK.Text" xml:space="preserve">
+    <value>JDK</value>
+  </data>
+  <data name="&gt;&gt;chkJDK.Name" xml:space="preserve">
+    <value>chkJDK</value>
+  </data>
+  <data name="&gt;&gt;chkJDK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkJDK.Parent" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;chkJDK.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="grpInstall.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="grpInstall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>778, 278</value>
+  </data>
+  <data name="grpInstall.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grpInstall.Text" xml:space="preserve">
+    <value>Select Items to Install:</value>
+  </data>
+  <data name="&gt;&gt;grpInstall.Name" xml:space="preserve">
+    <value>grpInstall</value>
+  </data>
+  <data name="&gt;&gt;grpInstall.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpInstall.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpInstall.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="radOfficialRepo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radOfficialRepo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 55</value>
+  </data>
+  <data name="radOfficialRepo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 24</value>
+  </data>
+  <data name="radOfficialRepo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="radOfficialRepo.Text" xml:space="preserve">
+    <value>Use official</value>
+  </data>
+  <data name="&gt;&gt;radOfficialRepo.Name" xml:space="preserve">
+    <value>radOfficialRepo</value>
+  </data>
+  <data name="&gt;&gt;radOfficialRepo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radOfficialRepo.Parent" xml:space="preserve">
+    <value>grpGitRepo</value>
+  </data>
+  <data name="&gt;&gt;radOfficialRepo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radCommunityRepo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radCommunityRepo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 82</value>
+  </data>
+  <data name="radCommunityRepo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 24</value>
+  </data>
+  <data name="radCommunityRepo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="radCommunityRepo.Text" xml:space="preserve">
+    <value>Use community made:</value>
+  </data>
+  <data name="&gt;&gt;radCommunityRepo.Name" xml:space="preserve">
+    <value>radCommunityRepo</value>
+  </data>
+  <data name="&gt;&gt;radCommunityRepo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radCommunityRepo.Parent" xml:space="preserve">
+    <value>grpGitRepo</value>
+  </data>
+  <data name="&gt;&gt;radCommunityRepo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmbRepoList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 81</value>
+  </data>
+  <data name="cmbRepoList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 28</value>
+  </data>
+  <data name="cmbRepoList.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmbRepoList.Name" xml:space="preserve">
+    <value>cmbRepoList</value>
+  </data>
+  <data name="&gt;&gt;cmbRepoList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbRepoList.Parent" xml:space="preserve">
+    <value>grpGitRepo</value>
+  </data>
+  <data name="&gt;&gt;cmbRepoList.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnClone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 115</value>
+  </data>
+  <data name="btnClone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 42</value>
+  </data>
+  <data name="btnClone.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnClone.Text" xml:space="preserve">
+    <value>Clone</value>
+  </data>
+  <data name="&gt;&gt;btnClone.Name" xml:space="preserve">
+    <value>btnClone</value>
+  </data>
+  <data name="&gt;&gt;btnClone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClone.Parent" xml:space="preserve">
+    <value>grpGitRepo</value>
+  </data>
+  <data name="&gt;&gt;btnClone.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnFTC_Browse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>666, 17</value>
+  </data>
+  <data name="btnFTC_Browse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 35</value>
+  </data>
+  <data name="btnFTC_Browse.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnFTC_Browse.Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="&gt;&gt;btnFTC_Browse.Name" xml:space="preserve">
+    <value>btnFTC_Browse</value>
+  </data>
+  <data name="&gt;&gt;btnFTC_Browse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFTC_Browse.Parent" xml:space="preserve">
+    <value>grpGitRepo</value>
+  </data>
+  <data name="&gt;&gt;btnFTC_Browse.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtFTC_ClonePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 21</value>
+  </data>
+  <data name="txtFTC_ClonePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>479, 28</value>
+  </data>
+  <data name="txtFTC_ClonePath.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtFTC_ClonePath.Name" xml:space="preserve">
+    <value>txtFTC_ClonePath</value>
+  </data>
+  <data name="&gt;&gt;txtFTC_ClonePath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFTC_ClonePath.Parent" xml:space="preserve">
+    <value>grpGitRepo</value>
+  </data>
+  <data name="&gt;&gt;txtFTC_ClonePath.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblFTC_ClonePath.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFTC_ClonePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="lblFTC_ClonePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 20</value>
+  </data>
+  <data name="lblFTC_ClonePath.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblFTC_ClonePath.Text" xml:space="preserve">
+    <value>FTC SDK Location:</value>
+  </data>
+  <data name="&gt;&gt;lblFTC_ClonePath.Name" xml:space="preserve">
+    <value>lblFTC_ClonePath</value>
+  </data>
+  <data name="&gt;&gt;lblFTC_ClonePath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFTC_ClonePath.Parent" xml:space="preserve">
+    <value>grpGitRepo</value>
+  </data>
+  <data name="&gt;&gt;lblFTC_ClonePath.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="grpGitRepo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 296</value>
+  </data>
+  <data name="grpGitRepo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>778, 165</value>
+  </data>
+  <data name="grpGitRepo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="grpGitRepo.Text" xml:space="preserve">
+    <value>Get a FTC SDK (via Git):</value>
+  </data>
+  <data name="&gt;&gt;grpGitRepo.Name" xml:space="preserve">
+    <value>grpGitRepo</value>
+  </data>
+  <data name="&gt;&gt;grpGitRepo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpGitRepo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpGitRepo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="prgStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 487</value>
+  </data>
+  <data name="prgStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>674, 35</value>
+  </data>
+  <data name="prgStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;prgStatus.Name" xml:space="preserve">
+    <value>prgStatus</value>
+  </data>
+  <data name="&gt;&gt;prgStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;prgStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;prgStatus.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblStatus.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 464</value>
+  </data>
+  <data name="lblStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 20</value>
+  </data>
+  <data name="lblStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblStatus.Text" xml:space="preserve">
+    <value>Waiting...</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Name" xml:space="preserve">
+    <value>lblStatus</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnAbort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>692, 487</value>
+  </data>
+  <data name="btnAbort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 35</value>
+  </data>
+  <data name="btnAbort.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnAbort.Text" xml:space="preserve">
+    <value>Abort</value>
+  </data>
+  <data name="&gt;&gt;btnAbort.Name" xml:space="preserve">
+    <value>btnAbort</value>
+  </data>
+  <data name="&gt;&gt;btnAbort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAbort.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAbort.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>120, 120</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>802, 534</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 10pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Setup</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>GUI</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

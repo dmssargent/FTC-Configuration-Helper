@@ -1,11 +1,13 @@
-﻿''' <summary>
+﻿<Assembly: CLSCompliant(True)> 
+
+''' <summary>
 ''' Provides what needs to be setup via just running or a GUI
 ''' </summary>
 ''' <remarks></remarks>
-Public Class Gui
+Public Class GUI
     Private Const GIT_DOWNLOAD_URL As String = "https://github.com/msysgit/msysgit/releases/download/Git-1.9.5-preview20150319/Git-1.9.5-preview20150319.exe"
     Private Const ANDROID_STUDIO_DOWNLOAD_URL As String = "https://dl.google.com/dl/android/studio/install/1.2.2.0/android-studio-bundle-141.1980579-windows.exe"
-    Private Const JAVA_DOWNLOAD_URL As String = "https://www.oracle.com"
+    Private Const JAVA_DOWNLOAD_URL As String = "http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html"
 
     Private Structure InstallerDetails
         Private url As String
@@ -27,7 +29,7 @@ Public Class Gui
                 If My.Computer.FileSystem.FileExists(value) Then
                     path = value
                 Else
-                    Throw New Exception("File Not Found")
+                    Throw New System.IO.FileNotFoundException
                 End If
             End Set
         End Property
@@ -58,12 +60,13 @@ Public Class Gui
     ''' <param name="silent">Whether to run the installer silently or not</param>
     ''' <returns>JDK setup exit code</returns>
     ''' <remarks></remarks>
-    Private Function Setup(ByVal setupName As String, ByVal setupFile As String, ByVal silent As Boolean) As Integer
+    Private Shared Function Setup(ByVal setupName As String, ByVal setupFile As String, ByVal silent As Boolean, Optional ByVal otherArgs As String = "") As Integer
         If Not My.Computer.FileSystem.FileExists(setupFile) Then
             Throw New System.IO.FileNotFoundException("Cannot find" & setupName & " Setup", setupFile)
         End If
 
         Dim args As System.Text.StringBuilder = New System.Text.StringBuilder("")
+        args.Append(otherArgs)
         If silent Then
             args.Append(" /silent")
         End If
@@ -73,6 +76,7 @@ Public Class Gui
         While True
             Try
                 javaExec = LaunchSetup(setupFile, args.ToString)
+                Exit While
             Catch e As Exception
                 MsgBox(e.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
                 If MsgBox("Do you want to retry " & setupName & " setup?", MsgBoxStyle.RetryCancel + MsgBoxStyle.Question, "JDK Setup") = MsgBoxResult.Retry Then
@@ -98,7 +102,7 @@ Public Class Gui
     ''' <param name="args">arguments to pass to setup</param>
     ''' <returns>Setup Exit Code</returns>
     ''' <remarks></remarks>
-    Private Shared Function LaunchSetup(ByRef setup As String, ByRef args As Integer) As Integer
+    Private Shared Function LaunchSetup(ByRef setup As String, ByRef args As String) As Integer
         Dim setupExec As Process = New Process()
         Try
             'Setup StartInfo
@@ -134,14 +138,13 @@ Public Class Gui
 
 
     Private Sub chkGit_CheckedChanged(sender As Object, e As EventArgs) Handles chkGit.CheckedChanged
-        'Make checks right
-        Me.txtGitSetupPath.Enabled = Not chkGitDownload.Checked
-        Me.btnGitSetupPath.Enabled = Not chkGitDownload.Checked
-
         Me.txtGitSetupPath.Enabled = chkGit.Checked
         Me.btnGitSetupPath.Enabled = chkGit.Checked
         Me.chkGitDownload.Enabled = chkGit.Checked
 
+        'Make checks right
+        Me.txtGitSetupPath.Enabled = Not chkGitDownload.Checked
+        Me.btnGitSetupPath.Enabled = Not chkGitDownload.Checked
         VerifyCanInstall()
     End Sub
 
@@ -153,14 +156,13 @@ Public Class Gui
 
 
     Private Sub chkAndroidStudio_CheckedChanged(sender As Object, e As EventArgs) Handles chkAndroidStudio.CheckedChanged
-        'Make checks right
-        Me.txtAndroidStudioISetupPath.Enabled = Not Me.chkAndroidStudioDownload.Checked
-        Me.btnAndroidStudioSetupPath.Enabled = Not Me.chkAndroidStudioDownload.Checked
-
-
         Me.txtAndroidStudioISetupPath.Enabled = chkAndroidStudio.Checked
         Me.btnAndroidStudioSetupPath.Enabled = chkAndroidStudio.Checked
         Me.chkAndroidStudioDownload.Enabled = chkAndroidStudio.Checked
+
+        'Make checks right
+        Me.txtAndroidStudioISetupPath.Enabled = Not Me.chkAndroidStudioDownload.Checked
+        Me.btnAndroidStudioSetupPath.Enabled = Not Me.chkAndroidStudioDownload.Checked
 
         VerifyCanInstall()
     End Sub
@@ -258,7 +260,12 @@ Public Class Gui
         Dim folders As FolderBrowserDialog = New FolderBrowserDialog()
         folders.SelectedPath = Me.txtFTC_ClonePath.Text
         folders.ShowNewFolderButton = True
-        folders.ShowDialog()
+        Try
+            folders.ShowDialog()
+        Catch ex As Exception
+            folders.Dispose()
+            Throw
+        End Try
 
         Me.txtFTC_ClonePath.Text = folders.SelectedPath
         folders.Dispose()
@@ -290,28 +297,28 @@ Public Class Gui
         My.Computer.FileSystem.CreateDirectory(downloadDir)
 
         If chkAndroidStudioDownload.Checked And chkAndroidStudio.Checked Then
-            packageDetails(0).DownloadURL = ANDROID_STUDIO_DOWNLOAD_URL
             packageDetails(0).filePath = downloadDir & "android-studio-setup.exe"
-            packageDetails(0).displayName = "Android Studio Setup"
-            'Me.btnAbort.Enabled = True
-        ElseIf MsgBox("Android Studio Setup has already been downloaded. Do you want to get it again?", _
-                     MsgBoxStyle.YesNo + MsgBoxStyle.Question) = MsgBoxResult.Yes Then
-            packageDetails(0).DownloadURL = ANDROID_STUDIO_DOWNLOAD_URL
-            packageDetails(0).filePath = downloadDir & "android-studio-setup.exe"
-            packageDetails(0).displayName = "Android Studio Setup"
-            'Me.btnAbort.Enabled = True
+            If Not My.Computer.FileSystem.FileExists(downloadDir & "android-studio-setup.exe") Then
+                packageDetails(0).downloadURL = ANDROID_STUDIO_DOWNLOAD_URL
+                packageDetails(0).displayName = "Android Studio Setup"
+                'Me.btnAbort.Enabled = True
+            ElseIf MsgBox("Android Studio Setup has already been downloaded. Do you want to get it again?", _
+                         MsgBoxStyle.YesNo + MsgBoxStyle.Question) = MsgBoxResult.Yes Then
+                packageDetails(0).downloadURL = ANDROID_STUDIO_DOWNLOAD_URL
+                packageDetails(0).displayName = "Android Studio Setup"
+                'Me.btnAbort.Enabled = True
+            End If
         End If
 
         If chkGit.Checked And chkGitDownload.Checked Then
+            packageDetails(1).filePath = downloadDir & "git-setup.exe"
             If Not My.Computer.FileSystem.FileExists(downloadDir & "git-setup.exe") Then
                 packageDetails(1).downloadURL = GIT_DOWNLOAD_URL
-                packageDetails(1).filePath = downloadDir & "git-setup.exe"
                 packageDetails(1).displayName = "Git Setup"
                 'Me.btnAbort.Enabled = True
             ElseIf MsgBox("Git Setup has already been downloaded. Do you want to get it again?", _
                           MsgBoxStyle.YesNo + MsgBoxStyle.Question) = MsgBoxResult.Yes Then
                 packageDetails(1).downloadURL = GIT_DOWNLOAD_URL
-                packageDetails(1).filePath = downloadDir & "git-setup.exe"
                 packageDetails(1).displayName = "Git Setup"
             End If
         End If
@@ -337,32 +344,53 @@ Public Class Gui
         'Remember to only read values from the Form
         If chkJDK.Checked Then
             If My.Computer.FileSystem.FileExists(Me.txtJDK_SetupPath.Text) Then
-                Setup("JDK 7", Me.txtJDK_SetupPath.Text, True)
+                prgStatusClear()
+                SetStatusText("Installing JDK...")
+                prgStatusStep(50)
+                Setup("JDK 7", Me.txtJDK_SetupPath.Text, False, " /s /l " & setupDir & "java-setup.log")
+                prgStatusStep(100)
             Else
                 MsgBox("JDK Setup File does not exist!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
             End If
         End If
 
         If chkGit.Checked Then
-            If chkGitDownload.Checked And My.Computer.FileSystem.FileExists(packageDetails(1).filePath.ToString) Then
+            If chkGitDownload.Checked And My.Computer.FileSystem.FileExists(packageDetails(1).filePath) Then
+                prgStatusClear()
+                SetStatusText("Installing Git...")
+                prgStatusStep(50)
                 Setup("Git", packageDetails(1).filePath.ToString, True)
+                prgStatusStep(100)
             ElseIf Not chkGitDownload.Checked And My.Computer.FileSystem.FileExists(Me.txtGitSetupPath.Text) Then
+                prgStatusClear()
+                SetStatusText("Installing Git...")
+                prgStatusStep(50)
                 Setup("Git", Me.txtGitSetupPath.Text, True)
+                prgStatusStep(100)
             Else
                 MsgBox("Git Setup file does not exist.", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
             End If
         End If
 
         If chkAndroidStudio.Checked Then
-            If chkAndroidStudioDownload.Checked And My.Computer.FileSystem.FileExists(packageDetails(0).filePath.ToString) Then
+            If chkAndroidStudioDownload.Checked And My.Computer.FileSystem.FileExists(packageDetails(0).filePath) Then
+                prgStatusClear()
+                SetStatusText("Installing Android Studio...")
+                prgStatusStep(50)
                 Setup("Android Studio", packageDetails(0).filePath.ToString, True)
+                prgStatusStep(100)
             ElseIf Not chkGitDownload.Checked And My.Computer.FileSystem.FileExists(Me.txtGitSetupPath.Text) Then
+                prgStatusClear()
+                SetStatusText("Installing Android Studio...")
+                prgStatusStep(50)
                 Setup("Android Studio", Me.txtGitSetupPath.Text, True)
+                prgStatusStep(100)
             Else
                 MsgBox("Android Studio Setup file does not exist.", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
             End If
         End If
-
+        prgStatusStep(100)
+        SetStatusText("Done! Setup is finished.")
         MsgBox("Setup is done!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly)
     End Sub
 
@@ -379,13 +407,13 @@ Public Class Gui
         chkJDK_CheckedChanged(Me.chkJDK, New System.EventArgs)
         radCommunityRepo_CheckedChanged(Me.radCommunityRepo, New System.EventArgs)
 
-        Me.btnAbort.Enabled = False
         Me.CenterToScreen()
     End Sub
 
+
     Private Sub GetInstaller(ByVal details As InstallerDetails)
         'Detect if installerDetails is setup correctly, otherwise just quit
-        If details.DownloadURL Is Nothing Then
+        If details.downloadURL Is Nothing Then
             Exit Sub
         End If
 
@@ -393,10 +421,10 @@ Public Class Gui
         Dim request As Net.HttpWebRequest
 
         Try
-            request = Net.HttpWebRequest.Create(details.DownloadURL)
+            request = Net.HttpWebRequest.Create(details.downloadURL)
             response = request.GetResponse()
         Catch ex As Exception
-            MsgBox("An error occurred getting " & details.DownloadURL, MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
+            MsgBox("An error occurred getting " & details.downloadURL, MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
             MsgBox(ex.StackTrace, MsgBoxStyle.OkOnly + MsgBoxStyle.Information)
             Throw
         End Try
@@ -424,6 +452,9 @@ Public Class Gui
         Dim currPrgPos = 0
         Do
             If abortNeeded Then
+                writeStream.Close()
+                response.GetResponseStream.Close()
+                Throw New Threading.Tasks.TaskCanceledException()
                 Exit Do
             End If
 
@@ -431,6 +462,8 @@ Public Class Gui
                 bytesRead = response.GetResponseStream.Read(readBytes, 0, 4096)
             Catch ex As Exception
                 MsgBox("An error occurred during download.")
+                writeStream.Close()
+                response.GetResponseStream.Close()
                 Throw
                 Exit Sub
             End Try
@@ -443,17 +476,16 @@ Public Class Gui
             writeStream.Write(readBytes, 0, bytesRead)
 
             'Take care of outputting status
-            'MsgBox(Int((read / size) * 100) & " " & read)
             If (Int((read / size) * 100)) > percent Then
                 percent += 1
                 currPrgPos += prgStep
-                prgStatusStep(currPrgPos)
             End If
 
+            prgStatusStep(currPrgPos)
             SetStatusText(FormatPercent(percent / 100, 0) & " Downloading - " & details.displayName)
             Threading.Thread.Yield()
         Loop
-
+        'Cleanup
         response.GetResponseStream.Close()
         writeStream.Close()
     End Sub
@@ -496,8 +528,13 @@ Public Class Gui
         End If
     End Sub
 
-
     Private Sub btnAbort_Click(sender As Object, e As EventArgs) Handles btnAbort.Click
         abortNeeded = True
+    End Sub
+
+    Private Sub llblJavaDownload_Click(sender As Object, e As EventArgs) Handles llblJavaDownload.Click
+        Dim browser As New Process()
+        browser.StartInfo.FileName = JAVA_DOWNLOAD_URL
+        browser.Start()
     End Sub
 End Class

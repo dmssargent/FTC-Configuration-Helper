@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Gui
+Partial Class GUI
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,6 +22,7 @@ Partial Class Gui
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GUI))
         Me.grpInstall = New System.Windows.Forms.GroupBox()
         Me.lblJavaLinkDescription = New System.Windows.Forms.Label()
         Me.llblJavaDownload = New System.Windows.Forms.LinkLabel()
@@ -59,6 +60,7 @@ Partial Class Gui
         Me.grpInstall.Controls.Add(Me.chkAndroidStudioDownload)
         Me.grpInstall.Controls.Add(Me.chkGitDownload)
         Me.grpInstall.Controls.Add(Me.txtGitSetupPath)
+        Me.grpInstall.Controls.Add(Me.btnInstall)
         Me.grpInstall.Controls.Add(Me.btnAndroidStudioSetupPath)
         Me.grpInstall.Controls.Add(Me.txtAndroidStudioISetupPath)
         Me.grpInstall.Controls.Add(Me.btnGitSetupPath)
@@ -67,141 +69,92 @@ Partial Class Gui
         Me.grpInstall.Controls.Add(Me.chkAndroidStudio)
         Me.grpInstall.Controls.Add(Me.chkGit)
         Me.grpInstall.Controls.Add(Me.chkJDK)
-        Me.grpInstall.Location = New System.Drawing.Point(12, 12)
+        resources.ApplyResources(Me.grpInstall, "grpInstall")
         Me.grpInstall.Name = "grpInstall"
-        Me.grpInstall.Size = New System.Drawing.Size(537, 200)
-        Me.grpInstall.TabIndex = 0
         Me.grpInstall.TabStop = False
         Me.grpInstall.Tag = "ANDROID_STUDIO"
-        Me.grpInstall.Text = "Select Items to Install:"
         '
         'lblJavaLinkDescription
         '
-        Me.lblJavaLinkDescription.AutoSize = True
-        Me.lblJavaLinkDescription.Location = New System.Drawing.Point(136, 51)
+        resources.ApplyResources(Me.lblJavaLinkDescription, "lblJavaLinkDescription")
         Me.lblJavaLinkDescription.Name = "lblJavaLinkDescription"
-        Me.lblJavaLinkDescription.Size = New System.Drawing.Size(139, 17)
-        Me.lblJavaLinkDescription.TabIndex = 12
-        Me.lblJavaLinkDescription.Text = "Download from here:"
         '
         'llblJavaDownload
         '
-        Me.llblJavaDownload.AutoSize = True
-        Me.llblJavaDownload.Location = New System.Drawing.Point(272, 51)
+        resources.ApplyResources(Me.llblJavaDownload, "llblJavaDownload")
         Me.llblJavaDownload.Name = "llblJavaDownload"
-        Me.llblJavaDownload.Size = New System.Drawing.Size(164, 20)
-        Me.llblJavaDownload.TabIndex = 11
         Me.llblJavaDownload.TabStop = True
-        Me.llblJavaDownload.Text = "Java SE JDK 7 Downloads"
         Me.llblJavaDownload.UseCompatibleTextRendering = True
         '
         'chkAndroidStudioDownload
         '
-        Me.chkAndroidStudioDownload.AutoSize = True
-        Me.chkAndroidStudioDownload.Location = New System.Drawing.Point(136, 171)
+        resources.ApplyResources(Me.chkAndroidStudioDownload, "chkAndroidStudioDownload")
         Me.chkAndroidStudioDownload.Name = "chkAndroidStudioDownload"
-        Me.chkAndroidStudioDownload.Size = New System.Drawing.Size(200, 21)
-        Me.chkAndroidStudioDownload.TabIndex = 10
-        Me.chkAndroidStudioDownload.Text = "Install from Internet instead"
         Me.chkAndroidStudioDownload.UseVisualStyleBackColor = True
         '
         'chkGitDownload
         '
-        Me.chkGitDownload.AutoSize = True
-        Me.chkGitDownload.Location = New System.Drawing.Point(136, 115)
+        resources.ApplyResources(Me.chkGitDownload, "chkGitDownload")
         Me.chkGitDownload.Name = "chkGitDownload"
-        Me.chkGitDownload.Size = New System.Drawing.Size(200, 21)
-        Me.chkGitDownload.TabIndex = 9
-        Me.chkGitDownload.Text = "Install from Internet instead"
         Me.chkGitDownload.UseVisualStyleBackColor = True
         '
         'txtGitSetupPath
         '
-        Me.txtGitSetupPath.Location = New System.Drawing.Point(136, 86)
+        resources.ApplyResources(Me.txtGitSetupPath, "txtGitSetupPath")
         Me.txtGitSetupPath.Name = "txtGitSetupPath"
-        Me.txtGitSetupPath.Size = New System.Drawing.Size(289, 22)
-        Me.txtGitSetupPath.TabIndex = 8
         '
         'btnAndroidStudioSetupPath
         '
-        Me.btnAndroidStudioSetupPath.Location = New System.Drawing.Point(431, 143)
+        resources.ApplyResources(Me.btnAndroidStudioSetupPath, "btnAndroidStudioSetupPath")
         Me.btnAndroidStudioSetupPath.Name = "btnAndroidStudioSetupPath"
-        Me.btnAndroidStudioSetupPath.Size = New System.Drawing.Size(100, 23)
-        Me.btnAndroidStudioSetupPath.TabIndex = 7
-        Me.btnAndroidStudioSetupPath.Text = "Browse..."
         Me.btnAndroidStudioSetupPath.UseVisualStyleBackColor = True
         '
         'txtAndroidStudioISetupPath
         '
-        Me.txtAndroidStudioISetupPath.Location = New System.Drawing.Point(136, 143)
+        resources.ApplyResources(Me.txtAndroidStudioISetupPath, "txtAndroidStudioISetupPath")
         Me.txtAndroidStudioISetupPath.Name = "txtAndroidStudioISetupPath"
-        Me.txtAndroidStudioISetupPath.Size = New System.Drawing.Size(289, 22)
-        Me.txtAndroidStudioISetupPath.TabIndex = 6
         '
         'btnGitSetupPath
         '
-        Me.btnGitSetupPath.Location = New System.Drawing.Point(431, 85)
+        resources.ApplyResources(Me.btnGitSetupPath, "btnGitSetupPath")
         Me.btnGitSetupPath.Name = "btnGitSetupPath"
-        Me.btnGitSetupPath.Size = New System.Drawing.Size(100, 23)
-        Me.btnGitSetupPath.TabIndex = 5
         Me.btnGitSetupPath.Tag = "GIT"
-        Me.btnGitSetupPath.Text = "Browse..."
         Me.btnGitSetupPath.UseVisualStyleBackColor = True
         '
         'txtJDK_SetupPath
         '
-        Me.txtJDK_SetupPath.Location = New System.Drawing.Point(136, 22)
+        resources.ApplyResources(Me.txtJDK_SetupPath, "txtJDK_SetupPath")
         Me.txtJDK_SetupPath.Name = "txtJDK_SetupPath"
-        Me.txtJDK_SetupPath.Size = New System.Drawing.Size(289, 22)
-        Me.txtJDK_SetupPath.TabIndex = 4
         '
         'btnJDK_Search
         '
-        Me.btnJDK_Search.Location = New System.Drawing.Point(431, 22)
+        resources.ApplyResources(Me.btnJDK_Search, "btnJDK_Search")
         Me.btnJDK_Search.Name = "btnJDK_Search"
-        Me.btnJDK_Search.Size = New System.Drawing.Size(100, 23)
-        Me.btnJDK_Search.TabIndex = 3
         Me.btnJDK_Search.Tag = "JDK"
-        Me.btnJDK_Search.Text = "Browse..."
         Me.btnJDK_Search.UseVisualStyleBackColor = True
         '
         'chkAndroidStudio
         '
-        Me.chkAndroidStudio.AutoSize = True
-        Me.chkAndroidStudio.Location = New System.Drawing.Point(7, 143)
+        resources.ApplyResources(Me.chkAndroidStudio, "chkAndroidStudio")
         Me.chkAndroidStudio.Name = "chkAndroidStudio"
-        Me.chkAndroidStudio.Size = New System.Drawing.Size(123, 21)
-        Me.chkAndroidStudio.TabIndex = 2
-        Me.chkAndroidStudio.Text = "Android Studio"
         Me.chkAndroidStudio.UseVisualStyleBackColor = True
         '
         'chkGit
         '
-        Me.chkGit.AutoSize = True
-        Me.chkGit.Location = New System.Drawing.Point(7, 88)
+        resources.ApplyResources(Me.chkGit, "chkGit")
         Me.chkGit.Name = "chkGit"
-        Me.chkGit.Size = New System.Drawing.Size(48, 21)
-        Me.chkGit.TabIndex = 1
-        Me.chkGit.Text = "Git"
         Me.chkGit.UseVisualStyleBackColor = True
         '
         'chkJDK
         '
-        Me.chkJDK.AutoSize = True
-        Me.chkJDK.Location = New System.Drawing.Point(7, 22)
+        resources.ApplyResources(Me.chkJDK, "chkJDK")
         Me.chkJDK.Name = "chkJDK"
-        Me.chkJDK.Size = New System.Drawing.Size(56, 21)
-        Me.chkJDK.TabIndex = 0
-        Me.chkJDK.Text = "JDK"
         Me.chkJDK.UseVisualStyleBackColor = True
         '
         'btnInstall
         '
-        Me.btnInstall.Location = New System.Drawing.Point(185, 218)
+        resources.ApplyResources(Me.btnInstall, "btnInstall")
         Me.btnInstall.Name = "btnInstall"
-        Me.btnInstall.Size = New System.Drawing.Size(174, 56)
-        Me.btnInstall.TabIndex = 1
-        Me.btnInstall.Text = "Install Programs"
         Me.btnInstall.UseVisualStyleBackColor = True
         '
         'grpGitRepo
@@ -209,120 +162,85 @@ Partial Class Gui
         Me.grpGitRepo.Controls.Add(Me.radOfficialRepo)
         Me.grpGitRepo.Controls.Add(Me.radCommunityRepo)
         Me.grpGitRepo.Controls.Add(Me.cmbRepoList)
+        Me.grpGitRepo.Controls.Add(Me.btnClone)
         Me.grpGitRepo.Controls.Add(Me.btnFTC_Browse)
         Me.grpGitRepo.Controls.Add(Me.txtFTC_ClonePath)
         Me.grpGitRepo.Controls.Add(Me.lblFTC_ClonePath)
-        Me.grpGitRepo.Location = New System.Drawing.Point(12, 285)
+        resources.ApplyResources(Me.grpGitRepo, "grpGitRepo")
         Me.grpGitRepo.Name = "grpGitRepo"
-        Me.grpGitRepo.Size = New System.Drawing.Size(537, 119)
-        Me.grpGitRepo.TabIndex = 2
         Me.grpGitRepo.TabStop = False
-        Me.grpGitRepo.Text = "Get a FTC SDK (via Git):"
         '
         'radOfficialRepo
         '
-        Me.radOfficialRepo.AutoSize = True
-        Me.radOfficialRepo.Location = New System.Drawing.Point(140, 50)
+        resources.ApplyResources(Me.radOfficialRepo, "radOfficialRepo")
         Me.radOfficialRepo.Name = "radOfficialRepo"
-        Me.radOfficialRepo.Size = New System.Drawing.Size(98, 21)
-        Me.radOfficialRepo.TabIndex = 5
         Me.radOfficialRepo.TabStop = True
-        Me.radOfficialRepo.Text = "Use official"
         Me.radOfficialRepo.UseVisualStyleBackColor = True
         '
         'radCommunityRepo
         '
-        Me.radCommunityRepo.AutoSize = True
-        Me.radCommunityRepo.Location = New System.Drawing.Point(140, 77)
+        resources.ApplyResources(Me.radCommunityRepo, "radCommunityRepo")
         Me.radCommunityRepo.Name = "radCommunityRepo"
-        Me.radCommunityRepo.Size = New System.Drawing.Size(168, 21)
-        Me.radCommunityRepo.TabIndex = 4
         Me.radCommunityRepo.TabStop = True
-        Me.radCommunityRepo.Text = "Use community made:"
         Me.radCommunityRepo.UseVisualStyleBackColor = True
         '
         'cmbRepoList
         '
         Me.cmbRepoList.FormattingEnabled = True
-        Me.cmbRepoList.Location = New System.Drawing.Point(314, 76)
+        resources.ApplyResources(Me.cmbRepoList, "cmbRepoList")
         Me.cmbRepoList.Name = "cmbRepoList"
-        Me.cmbRepoList.Size = New System.Drawing.Size(217, 24)
-        Me.cmbRepoList.TabIndex = 3
         '
         'btnFTC_Browse
         '
-        Me.btnFTC_Browse.Location = New System.Drawing.Point(445, 21)
+        resources.ApplyResources(Me.btnFTC_Browse, "btnFTC_Browse")
         Me.btnFTC_Browse.Name = "btnFTC_Browse"
-        Me.btnFTC_Browse.Size = New System.Drawing.Size(86, 23)
-        Me.btnFTC_Browse.TabIndex = 2
         Me.btnFTC_Browse.Tag = "FTC"
-        Me.btnFTC_Browse.Text = "Browse..."
         Me.btnFTC_Browse.UseVisualStyleBackColor = True
         '
         'txtFTC_ClonePath
         '
-        Me.txtFTC_ClonePath.Location = New System.Drawing.Point(140, 22)
+        resources.ApplyResources(Me.txtFTC_ClonePath, "txtFTC_ClonePath")
         Me.txtFTC_ClonePath.Name = "txtFTC_ClonePath"
-        Me.txtFTC_ClonePath.Size = New System.Drawing.Size(296, 22)
-        Me.txtFTC_ClonePath.TabIndex = 1
         '
         'lblFTC_ClonePath
         '
-        Me.lblFTC_ClonePath.AutoSize = True
-        Me.lblFTC_ClonePath.Location = New System.Drawing.Point(6, 24)
+        resources.ApplyResources(Me.lblFTC_ClonePath, "lblFTC_ClonePath")
         Me.lblFTC_ClonePath.Name = "lblFTC_ClonePath"
-        Me.lblFTC_ClonePath.Size = New System.Drawing.Size(128, 17)
-        Me.lblFTC_ClonePath.TabIndex = 0
-        Me.lblFTC_ClonePath.Text = "FTC SDK Location:"
         '
         'btnClone
         '
-        Me.btnClone.Location = New System.Drawing.Point(221, 410)
+        resources.ApplyResources(Me.btnClone, "btnClone")
         Me.btnClone.Name = "btnClone"
-        Me.btnClone.Size = New System.Drawing.Size(99, 27)
-        Me.btnClone.TabIndex = 3
-        Me.btnClone.Text = "Clone"
         Me.btnClone.UseVisualStyleBackColor = True
         '
         'prgStatus
         '
-        Me.prgStatus.Location = New System.Drawing.Point(12, 493)
+        resources.ApplyResources(Me.prgStatus, "prgStatus")
         Me.prgStatus.Name = "prgStatus"
-        Me.prgStatus.Size = New System.Drawing.Size(425, 23)
-        Me.prgStatus.TabIndex = 4
         '
         'lblStatus
         '
-        Me.lblStatus.AutoSize = True
-        Me.lblStatus.Location = New System.Drawing.Point(16, 473)
+        resources.ApplyResources(Me.lblStatus, "lblStatus")
         Me.lblStatus.Name = "lblStatus"
-        Me.lblStatus.Size = New System.Drawing.Size(67, 17)
-        Me.lblStatus.TabIndex = 5
-        Me.lblStatus.Text = "Waiting..."
         '
         'btnAbort
         '
-        Me.btnAbort.Location = New System.Drawing.Point(457, 493)
+        Me.btnAbort.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        resources.ApplyResources(Me.btnAbort, "btnAbort")
         Me.btnAbort.Name = "btnAbort"
-        Me.btnAbort.Size = New System.Drawing.Size(92, 23)
-        Me.btnAbort.TabIndex = 6
-        Me.btnAbort.Text = "Abort"
         Me.btnAbort.UseVisualStyleBackColor = True
         '
-        'setup
+        'GUI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(561, 528)
+        resources.ApplyResources(Me, "$this")
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
+        Me.CancelButton = Me.btnAbort
         Me.Controls.Add(Me.btnAbort)
         Me.Controls.Add(Me.lblStatus)
         Me.Controls.Add(Me.prgStatus)
-        Me.Controls.Add(Me.btnClone)
         Me.Controls.Add(Me.grpGitRepo)
-        Me.Controls.Add(Me.btnInstall)
         Me.Controls.Add(Me.grpInstall)
-        Me.Name = "setup"
-        Me.Text = "Setup"
+        Me.Name = "GUI"
         Me.grpInstall.ResumeLayout(False)
         Me.grpInstall.PerformLayout()
         Me.grpGitRepo.ResumeLayout(False)
