@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class setup
+Partial Class Gui
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,28 +23,31 @@ Partial Class setup
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.grpInstall = New System.Windows.Forms.GroupBox()
+        Me.lblJavaLinkDescription = New System.Windows.Forms.Label()
+        Me.llblJavaDownload = New System.Windows.Forms.LinkLabel()
+        Me.chkAndroidStudioDownload = New System.Windows.Forms.CheckBox()
+        Me.chkGitDownload = New System.Windows.Forms.CheckBox()
+        Me.txtGitSetupPath = New System.Windows.Forms.TextBox()
+        Me.btnAndroidStudioSetupPath = New System.Windows.Forms.Button()
+        Me.txtAndroidStudioISetupPath = New System.Windows.Forms.TextBox()
+        Me.btnGitSetupPath = New System.Windows.Forms.Button()
         Me.txtJDK_SetupPath = New System.Windows.Forms.TextBox()
         Me.btnJDK_Search = New System.Windows.Forms.Button()
         Me.chkAndroidStudio = New System.Windows.Forms.CheckBox()
         Me.chkGit = New System.Windows.Forms.CheckBox()
         Me.chkJDK = New System.Windows.Forms.CheckBox()
-        Me.txtAndroidStudioISetupPath = New System.Windows.Forms.TextBox()
-        Me.btnGitSetupPath = New System.Windows.Forms.Button()
-        Me.txtGitSetupPath = New System.Windows.Forms.TextBox()
-        Me.btnAndroidStudioSetupPath = New System.Windows.Forms.Button()
-        Me.chkGitDownload = New System.Windows.Forms.CheckBox()
-        Me.chkAndroidStudioDownload = New System.Windows.Forms.CheckBox()
-        Me.llblJavaDownload = New System.Windows.Forms.LinkLabel()
-        Me.lblJavaLinkDescription = New System.Windows.Forms.Label()
         Me.btnInstall = New System.Windows.Forms.Button()
         Me.grpGitRepo = New System.Windows.Forms.GroupBox()
-        Me.lblFTC_ClonePath = New System.Windows.Forms.Label()
-        Me.txtFTC_ClonePath = New System.Windows.Forms.TextBox()
-        Me.btnFTC_Browse = New System.Windows.Forms.Button()
-        Me.cmbRepoList = New System.Windows.Forms.ComboBox()
-        Me.radCommunityRepo = New System.Windows.Forms.RadioButton()
         Me.radOfficialRepo = New System.Windows.Forms.RadioButton()
+        Me.radCommunityRepo = New System.Windows.Forms.RadioButton()
+        Me.cmbRepoList = New System.Windows.Forms.ComboBox()
+        Me.btnFTC_Browse = New System.Windows.Forms.Button()
+        Me.txtFTC_ClonePath = New System.Windows.Forms.TextBox()
+        Me.lblFTC_ClonePath = New System.Windows.Forms.Label()
         Me.btnClone = New System.Windows.Forms.Button()
+        Me.prgStatus = New System.Windows.Forms.ProgressBar()
+        Me.lblStatus = New System.Windows.Forms.Label()
+        Me.btnAbort = New System.Windows.Forms.Button()
         Me.grpInstall.SuspendLayout()
         Me.grpGitRepo.SuspendLayout()
         Me.SuspendLayout()
@@ -69,7 +72,81 @@ Partial Class setup
         Me.grpInstall.Size = New System.Drawing.Size(537, 200)
         Me.grpInstall.TabIndex = 0
         Me.grpInstall.TabStop = False
+        Me.grpInstall.Tag = "ANDROID_STUDIO"
         Me.grpInstall.Text = "Select Items to Install:"
+        '
+        'lblJavaLinkDescription
+        '
+        Me.lblJavaLinkDescription.AutoSize = True
+        Me.lblJavaLinkDescription.Location = New System.Drawing.Point(136, 51)
+        Me.lblJavaLinkDescription.Name = "lblJavaLinkDescription"
+        Me.lblJavaLinkDescription.Size = New System.Drawing.Size(139, 17)
+        Me.lblJavaLinkDescription.TabIndex = 12
+        Me.lblJavaLinkDescription.Text = "Download from here:"
+        '
+        'llblJavaDownload
+        '
+        Me.llblJavaDownload.AutoSize = True
+        Me.llblJavaDownload.Location = New System.Drawing.Point(272, 51)
+        Me.llblJavaDownload.Name = "llblJavaDownload"
+        Me.llblJavaDownload.Size = New System.Drawing.Size(164, 20)
+        Me.llblJavaDownload.TabIndex = 11
+        Me.llblJavaDownload.TabStop = True
+        Me.llblJavaDownload.Text = "Java SE JDK 7 Downloads"
+        Me.llblJavaDownload.UseCompatibleTextRendering = True
+        '
+        'chkAndroidStudioDownload
+        '
+        Me.chkAndroidStudioDownload.AutoSize = True
+        Me.chkAndroidStudioDownload.Location = New System.Drawing.Point(136, 171)
+        Me.chkAndroidStudioDownload.Name = "chkAndroidStudioDownload"
+        Me.chkAndroidStudioDownload.Size = New System.Drawing.Size(200, 21)
+        Me.chkAndroidStudioDownload.TabIndex = 10
+        Me.chkAndroidStudioDownload.Text = "Install from Internet instead"
+        Me.chkAndroidStudioDownload.UseVisualStyleBackColor = True
+        '
+        'chkGitDownload
+        '
+        Me.chkGitDownload.AutoSize = True
+        Me.chkGitDownload.Location = New System.Drawing.Point(136, 115)
+        Me.chkGitDownload.Name = "chkGitDownload"
+        Me.chkGitDownload.Size = New System.Drawing.Size(200, 21)
+        Me.chkGitDownload.TabIndex = 9
+        Me.chkGitDownload.Text = "Install from Internet instead"
+        Me.chkGitDownload.UseVisualStyleBackColor = True
+        '
+        'txtGitSetupPath
+        '
+        Me.txtGitSetupPath.Location = New System.Drawing.Point(136, 86)
+        Me.txtGitSetupPath.Name = "txtGitSetupPath"
+        Me.txtGitSetupPath.Size = New System.Drawing.Size(289, 22)
+        Me.txtGitSetupPath.TabIndex = 8
+        '
+        'btnAndroidStudioSetupPath
+        '
+        Me.btnAndroidStudioSetupPath.Location = New System.Drawing.Point(431, 143)
+        Me.btnAndroidStudioSetupPath.Name = "btnAndroidStudioSetupPath"
+        Me.btnAndroidStudioSetupPath.Size = New System.Drawing.Size(100, 23)
+        Me.btnAndroidStudioSetupPath.TabIndex = 7
+        Me.btnAndroidStudioSetupPath.Text = "Browse..."
+        Me.btnAndroidStudioSetupPath.UseVisualStyleBackColor = True
+        '
+        'txtAndroidStudioISetupPath
+        '
+        Me.txtAndroidStudioISetupPath.Location = New System.Drawing.Point(136, 143)
+        Me.txtAndroidStudioISetupPath.Name = "txtAndroidStudioISetupPath"
+        Me.txtAndroidStudioISetupPath.Size = New System.Drawing.Size(289, 22)
+        Me.txtAndroidStudioISetupPath.TabIndex = 6
+        '
+        'btnGitSetupPath
+        '
+        Me.btnGitSetupPath.Location = New System.Drawing.Point(431, 85)
+        Me.btnGitSetupPath.Name = "btnGitSetupPath"
+        Me.btnGitSetupPath.Size = New System.Drawing.Size(100, 23)
+        Me.btnGitSetupPath.TabIndex = 5
+        Me.btnGitSetupPath.Tag = "GIT"
+        Me.btnGitSetupPath.Text = "Browse..."
+        Me.btnGitSetupPath.UseVisualStyleBackColor = True
         '
         'txtJDK_SetupPath
         '
@@ -84,6 +161,7 @@ Partial Class setup
         Me.btnJDK_Search.Name = "btnJDK_Search"
         Me.btnJDK_Search.Size = New System.Drawing.Size(100, 23)
         Me.btnJDK_Search.TabIndex = 3
+        Me.btnJDK_Search.Tag = "JDK"
         Me.btnJDK_Search.Text = "Browse..."
         Me.btnJDK_Search.UseVisualStyleBackColor = True
         '
@@ -117,78 +195,6 @@ Partial Class setup
         Me.chkJDK.Text = "JDK"
         Me.chkJDK.UseVisualStyleBackColor = True
         '
-        'txtAndroidStudioISetupPath
-        '
-        Me.txtAndroidStudioISetupPath.Location = New System.Drawing.Point(136, 143)
-        Me.txtAndroidStudioISetupPath.Name = "txtAndroidStudioISetupPath"
-        Me.txtAndroidStudioISetupPath.Size = New System.Drawing.Size(289, 22)
-        Me.txtAndroidStudioISetupPath.TabIndex = 6
-        '
-        'btnGitSetupPath
-        '
-        Me.btnGitSetupPath.Location = New System.Drawing.Point(431, 85)
-        Me.btnGitSetupPath.Name = "btnGitSetupPath"
-        Me.btnGitSetupPath.Size = New System.Drawing.Size(100, 23)
-        Me.btnGitSetupPath.TabIndex = 5
-        Me.btnGitSetupPath.Text = "Browse..."
-        Me.btnGitSetupPath.UseVisualStyleBackColor = True
-        '
-        'txtGitSetupPath
-        '
-        Me.txtGitSetupPath.Location = New System.Drawing.Point(136, 86)
-        Me.txtGitSetupPath.Name = "txtGitSetupPath"
-        Me.txtGitSetupPath.Size = New System.Drawing.Size(289, 22)
-        Me.txtGitSetupPath.TabIndex = 8
-        '
-        'btnAndroidStudioSetupPath
-        '
-        Me.btnAndroidStudioSetupPath.Location = New System.Drawing.Point(431, 143)
-        Me.btnAndroidStudioSetupPath.Name = "btnAndroidStudioSetupPath"
-        Me.btnAndroidStudioSetupPath.Size = New System.Drawing.Size(100, 23)
-        Me.btnAndroidStudioSetupPath.TabIndex = 7
-        Me.btnAndroidStudioSetupPath.Text = "Browse..."
-        Me.btnAndroidStudioSetupPath.UseVisualStyleBackColor = True
-        '
-        'chkGitDownload
-        '
-        Me.chkGitDownload.AutoSize = True
-        Me.chkGitDownload.Location = New System.Drawing.Point(136, 115)
-        Me.chkGitDownload.Name = "chkGitDownload"
-        Me.chkGitDownload.Size = New System.Drawing.Size(200, 21)
-        Me.chkGitDownload.TabIndex = 9
-        Me.chkGitDownload.Text = "Install from Internet instead"
-        Me.chkGitDownload.UseVisualStyleBackColor = True
-        '
-        'chkAndroidStudioDownload
-        '
-        Me.chkAndroidStudioDownload.AutoSize = True
-        Me.chkAndroidStudioDownload.Location = New System.Drawing.Point(136, 171)
-        Me.chkAndroidStudioDownload.Name = "chkAndroidStudioDownload"
-        Me.chkAndroidStudioDownload.Size = New System.Drawing.Size(200, 21)
-        Me.chkAndroidStudioDownload.TabIndex = 10
-        Me.chkAndroidStudioDownload.Text = "Install from Internet instead"
-        Me.chkAndroidStudioDownload.UseVisualStyleBackColor = True
-        '
-        'llblJavaDownload
-        '
-        Me.llblJavaDownload.AutoSize = True
-        Me.llblJavaDownload.Location = New System.Drawing.Point(272, 51)
-        Me.llblJavaDownload.Name = "llblJavaDownload"
-        Me.llblJavaDownload.Size = New System.Drawing.Size(164, 20)
-        Me.llblJavaDownload.TabIndex = 11
-        Me.llblJavaDownload.TabStop = True
-        Me.llblJavaDownload.Text = "Java SE JDK 7 Downloads"
-        Me.llblJavaDownload.UseCompatibleTextRendering = True
-        '
-        'lblJavaLinkDescription
-        '
-        Me.lblJavaLinkDescription.AutoSize = True
-        Me.lblJavaLinkDescription.Location = New System.Drawing.Point(136, 51)
-        Me.lblJavaLinkDescription.Name = "lblJavaLinkDescription"
-        Me.lblJavaLinkDescription.Size = New System.Drawing.Size(139, 17)
-        Me.lblJavaLinkDescription.TabIndex = 12
-        Me.lblJavaLinkDescription.Text = "Download from here:"
-        '
         'btnInstall
         '
         Me.btnInstall.Location = New System.Drawing.Point(185, 218)
@@ -213,38 +219,16 @@ Partial Class setup
         Me.grpGitRepo.TabStop = False
         Me.grpGitRepo.Text = "Get a FTC SDK (via Git):"
         '
-        'lblFTC_ClonePath
+        'radOfficialRepo
         '
-        Me.lblFTC_ClonePath.AutoSize = True
-        Me.lblFTC_ClonePath.Location = New System.Drawing.Point(6, 24)
-        Me.lblFTC_ClonePath.Name = "lblFTC_ClonePath"
-        Me.lblFTC_ClonePath.Size = New System.Drawing.Size(128, 17)
-        Me.lblFTC_ClonePath.TabIndex = 0
-        Me.lblFTC_ClonePath.Text = "FTC SDK Location:"
-        '
-        'txtFTC_ClonePath
-        '
-        Me.txtFTC_ClonePath.Location = New System.Drawing.Point(140, 22)
-        Me.txtFTC_ClonePath.Name = "txtFTC_ClonePath"
-        Me.txtFTC_ClonePath.Size = New System.Drawing.Size(296, 22)
-        Me.txtFTC_ClonePath.TabIndex = 1
-        '
-        'btnFTC_Browse
-        '
-        Me.btnFTC_Browse.Location = New System.Drawing.Point(445, 21)
-        Me.btnFTC_Browse.Name = "btnFTC_Browse"
-        Me.btnFTC_Browse.Size = New System.Drawing.Size(86, 23)
-        Me.btnFTC_Browse.TabIndex = 2
-        Me.btnFTC_Browse.Text = "Browse..."
-        Me.btnFTC_Browse.UseVisualStyleBackColor = True
-        '
-        'cmbRepoList
-        '
-        Me.cmbRepoList.FormattingEnabled = True
-        Me.cmbRepoList.Location = New System.Drawing.Point(314, 76)
-        Me.cmbRepoList.Name = "cmbRepoList"
-        Me.cmbRepoList.Size = New System.Drawing.Size(217, 24)
-        Me.cmbRepoList.TabIndex = 3
+        Me.radOfficialRepo.AutoSize = True
+        Me.radOfficialRepo.Location = New System.Drawing.Point(140, 50)
+        Me.radOfficialRepo.Name = "radOfficialRepo"
+        Me.radOfficialRepo.Size = New System.Drawing.Size(98, 21)
+        Me.radOfficialRepo.TabIndex = 5
+        Me.radOfficialRepo.TabStop = True
+        Me.radOfficialRepo.Text = "Use official"
+        Me.radOfficialRepo.UseVisualStyleBackColor = True
         '
         'radCommunityRepo
         '
@@ -257,16 +241,39 @@ Partial Class setup
         Me.radCommunityRepo.Text = "Use community made:"
         Me.radCommunityRepo.UseVisualStyleBackColor = True
         '
-        'radOfficialRepo
+        'cmbRepoList
         '
-        Me.radOfficialRepo.AutoSize = True
-        Me.radOfficialRepo.Location = New System.Drawing.Point(140, 50)
-        Me.radOfficialRepo.Name = "radOfficialRepo"
-        Me.radOfficialRepo.Size = New System.Drawing.Size(98, 21)
-        Me.radOfficialRepo.TabIndex = 5
-        Me.radOfficialRepo.TabStop = True
-        Me.radOfficialRepo.Text = "Use official"
-        Me.radOfficialRepo.UseVisualStyleBackColor = True
+        Me.cmbRepoList.FormattingEnabled = True
+        Me.cmbRepoList.Location = New System.Drawing.Point(314, 76)
+        Me.cmbRepoList.Name = "cmbRepoList"
+        Me.cmbRepoList.Size = New System.Drawing.Size(217, 24)
+        Me.cmbRepoList.TabIndex = 3
+        '
+        'btnFTC_Browse
+        '
+        Me.btnFTC_Browse.Location = New System.Drawing.Point(445, 21)
+        Me.btnFTC_Browse.Name = "btnFTC_Browse"
+        Me.btnFTC_Browse.Size = New System.Drawing.Size(86, 23)
+        Me.btnFTC_Browse.TabIndex = 2
+        Me.btnFTC_Browse.Tag = "FTC"
+        Me.btnFTC_Browse.Text = "Browse..."
+        Me.btnFTC_Browse.UseVisualStyleBackColor = True
+        '
+        'txtFTC_ClonePath
+        '
+        Me.txtFTC_ClonePath.Location = New System.Drawing.Point(140, 22)
+        Me.txtFTC_ClonePath.Name = "txtFTC_ClonePath"
+        Me.txtFTC_ClonePath.Size = New System.Drawing.Size(296, 22)
+        Me.txtFTC_ClonePath.TabIndex = 1
+        '
+        'lblFTC_ClonePath
+        '
+        Me.lblFTC_ClonePath.AutoSize = True
+        Me.lblFTC_ClonePath.Location = New System.Drawing.Point(6, 24)
+        Me.lblFTC_ClonePath.Name = "lblFTC_ClonePath"
+        Me.lblFTC_ClonePath.Size = New System.Drawing.Size(128, 17)
+        Me.lblFTC_ClonePath.TabIndex = 0
+        Me.lblFTC_ClonePath.Text = "FTC SDK Location:"
         '
         'btnClone
         '
@@ -277,11 +284,39 @@ Partial Class setup
         Me.btnClone.Text = "Clone"
         Me.btnClone.UseVisualStyleBackColor = True
         '
+        'prgStatus
+        '
+        Me.prgStatus.Location = New System.Drawing.Point(12, 493)
+        Me.prgStatus.Name = "prgStatus"
+        Me.prgStatus.Size = New System.Drawing.Size(425, 23)
+        Me.prgStatus.TabIndex = 4
+        '
+        'lblStatus
+        '
+        Me.lblStatus.AutoSize = True
+        Me.lblStatus.Location = New System.Drawing.Point(16, 473)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(67, 17)
+        Me.lblStatus.TabIndex = 5
+        Me.lblStatus.Text = "Waiting..."
+        '
+        'btnAbort
+        '
+        Me.btnAbort.Location = New System.Drawing.Point(457, 493)
+        Me.btnAbort.Name = "btnAbort"
+        Me.btnAbort.Size = New System.Drawing.Size(92, 23)
+        Me.btnAbort.TabIndex = 6
+        Me.btnAbort.Text = "Abort"
+        Me.btnAbort.UseVisualStyleBackColor = True
+        '
         'setup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(561, 449)
+        Me.ClientSize = New System.Drawing.Size(561, 528)
+        Me.Controls.Add(Me.btnAbort)
+        Me.Controls.Add(Me.lblStatus)
+        Me.Controls.Add(Me.prgStatus)
         Me.Controls.Add(Me.btnClone)
         Me.Controls.Add(Me.grpGitRepo)
         Me.Controls.Add(Me.btnInstall)
@@ -293,6 +328,7 @@ Partial Class setup
         Me.grpGitRepo.ResumeLayout(False)
         Me.grpGitRepo.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents grpInstall As System.Windows.Forms.GroupBox
@@ -318,4 +354,7 @@ Partial Class setup
     Friend WithEvents txtFTC_ClonePath As System.Windows.Forms.TextBox
     Friend WithEvents lblFTC_ClonePath As System.Windows.Forms.Label
     Friend WithEvents btnClone As System.Windows.Forms.Button
+    Friend WithEvents prgStatus As System.Windows.Forms.ProgressBar
+    Friend WithEvents lblStatus As System.Windows.Forms.Label
+    Friend WithEvents btnAbort As System.Windows.Forms.Button
 End Class

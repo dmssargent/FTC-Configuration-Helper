@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Setup.Gui
+            Me.MainForm = Global.WLAN_Manager.Form1
         End Sub
     End Class
 End Namespace

@@ -1,6 +1,4 @@
-﻿Imports System.Resources
-
-Imports System
+﻿Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -10,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Setup")> 
-<Assembly: AssemblyDescription("FTC Setup Manager")> 
-<Assembly: AssemblyCompany("FTC 5395")> 
-<Assembly: AssemblyProduct("FTC Configuration Chcker")> 
+<Assembly: AssemblyTitle("Configure")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyProduct("Configure")> 
 <Assembly: AssemblyCopyright("Copyright ©  2015")> 
 <Assembly: AssemblyTrademark("")> 
 
-<Assembly: ComVisible(True)> 
+<Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("024f0aad-ea2e-4903-b026-c56dc016676d")> 
+<Assembly: Guid("ce50fbe2-a5cb-4f0f-b90a-a182d4d08dc8")> 
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -33,7 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("0.0.1.5")> 
-<Assembly: AssemblyFileVersion("1.0.1.5")> 
-
-<Assembly: NeutralResourcesLanguageAttribute("en-US")> 
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> 

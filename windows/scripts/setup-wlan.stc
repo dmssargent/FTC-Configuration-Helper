@@ -56,13 +56,13 @@
 	
 	if not "%DRIVER_IP%" == "DHCP" (
 		if not "%PHONE_IP%" == "DHCP" (
-			call .\configure.devices
+			call .\configure.devices.bat
 		)
 		rem Else falls out in to next if statement
 	)
 	
 	if not "%PHONE_IP%" == "DHCP" (
-		call .\configure.devices
+		call .\configure.devices.bat
 	)
 	
 	netsh wlan stop hostednetwork
