@@ -47,6 +47,7 @@ set input=
 		echo Success^^! We can continue.
 	) else (
 		echo Not running as an admin, please run this as a administrator.
+		pause
 		goto :abort
 	)
 
@@ -54,6 +55,22 @@ set input=
 	if "%1" == "--skip-checks" (
 		goto :write_post_config
 	)
+	
+	if "%1" == "--no-gui" (
+		goto :check_java
+	)
+	
+:gui
+	echo Starting GUI...
+	if "%PROCESSOR_ARCHITECTURE%" == "AMD64" (
+		goto :gui_64
+	)
+	.\windows\bin\configure.exe
+	goto :exit
+	
+:gui_64
+	.\windows\bin\x64\configure.exe
+	goto :exit
 
 :check_java
 	echo Looking for java...
