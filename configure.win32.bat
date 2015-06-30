@@ -65,11 +65,11 @@ set input=
 	if "%PROCESSOR_ARCHITECTURE%" == "AMD64" (
 		goto :gui_64
 	)
-	.\windows\bin\configure.exe
+	start %~dp0\windows\bin\Configure.exe
 	goto :exit
 	
 :gui_64
-	.\windows\bin\x64\configure.exe
+	start %~dp0\windows\bin\x64\Configure.exe
 	goto :exit
 
 :check_java
@@ -414,7 +414,6 @@ rem Have android.bat show updates
 	
 
 :exit
-
 	if %DISPLAY_PATH% == 1 (
 		echo Please update your user PATH variable. If use you use it, please remove surrounding quotes.  The path generated for use is:
 		echo "%PATH%"
