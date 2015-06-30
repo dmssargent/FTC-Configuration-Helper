@@ -29,6 +29,7 @@ Partial Class GUI
         Me.chkAndroidStudioDownload = New System.Windows.Forms.CheckBox()
         Me.chkGitDownload = New System.Windows.Forms.CheckBox()
         Me.txtGitSetupPath = New System.Windows.Forms.TextBox()
+        Me.btnInstall = New System.Windows.Forms.Button()
         Me.btnAndroidStudioSetupPath = New System.Windows.Forms.Button()
         Me.txtAndroidStudioISetupPath = New System.Windows.Forms.TextBox()
         Me.btnGitSetupPath = New System.Windows.Forms.Button()
@@ -37,15 +38,14 @@ Partial Class GUI
         Me.chkAndroidStudio = New System.Windows.Forms.CheckBox()
         Me.chkGit = New System.Windows.Forms.CheckBox()
         Me.chkJDK = New System.Windows.Forms.CheckBox()
-        Me.btnInstall = New System.Windows.Forms.Button()
         Me.grpGitRepo = New System.Windows.Forms.GroupBox()
         Me.radOfficialRepo = New System.Windows.Forms.RadioButton()
         Me.radCommunityRepo = New System.Windows.Forms.RadioButton()
         Me.cmbRepoList = New System.Windows.Forms.ComboBox()
+        Me.btnClone = New System.Windows.Forms.Button()
         Me.btnFTC_Browse = New System.Windows.Forms.Button()
         Me.txtFTC_ClonePath = New System.Windows.Forms.TextBox()
         Me.lblFTC_ClonePath = New System.Windows.Forms.Label()
-        Me.btnClone = New System.Windows.Forms.Button()
         Me.prgStatus = New System.Windows.Forms.ProgressBar()
         Me.lblStatus = New System.Windows.Forms.Label()
         Me.btnAbort = New System.Windows.Forms.Button()
@@ -103,6 +103,12 @@ Partial Class GUI
         resources.ApplyResources(Me.txtGitSetupPath, "txtGitSetupPath")
         Me.txtGitSetupPath.Name = "txtGitSetupPath"
         '
+        'btnInstall
+        '
+        resources.ApplyResources(Me.btnInstall, "btnInstall")
+        Me.btnInstall.Name = "btnInstall"
+        Me.btnInstall.UseVisualStyleBackColor = True
+        '
         'btnAndroidStudioSetupPath
         '
         resources.ApplyResources(Me.btnAndroidStudioSetupPath, "btnAndroidStudioSetupPath")
@@ -151,12 +157,6 @@ Partial Class GUI
         Me.chkJDK.Name = "chkJDK"
         Me.chkJDK.UseVisualStyleBackColor = True
         '
-        'btnInstall
-        '
-        resources.ApplyResources(Me.btnInstall, "btnInstall")
-        Me.btnInstall.Name = "btnInstall"
-        Me.btnInstall.UseVisualStyleBackColor = True
-        '
         'grpGitRepo
         '
         Me.grpGitRepo.Controls.Add(Me.radOfficialRepo)
@@ -190,6 +190,12 @@ Partial Class GUI
         resources.ApplyResources(Me.cmbRepoList, "cmbRepoList")
         Me.cmbRepoList.Name = "cmbRepoList"
         '
+        'btnClone
+        '
+        resources.ApplyResources(Me.btnClone, "btnClone")
+        Me.btnClone.Name = "btnClone"
+        Me.btnClone.UseVisualStyleBackColor = True
+        '
         'btnFTC_Browse
         '
         resources.ApplyResources(Me.btnFTC_Browse, "btnFTC_Browse")
@@ -206,12 +212,6 @@ Partial Class GUI
         '
         resources.ApplyResources(Me.lblFTC_ClonePath, "lblFTC_ClonePath")
         Me.lblFTC_ClonePath.Name = "lblFTC_ClonePath"
-        '
-        'btnClone
-        '
-        resources.ApplyResources(Me.btnClone, "btnClone")
-        Me.btnClone.Name = "btnClone"
-        Me.btnClone.UseVisualStyleBackColor = True
         '
         'prgStatus
         '

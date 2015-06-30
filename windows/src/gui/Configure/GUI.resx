@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnSetup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 393</value>
+  </data>
+  <data name="btnSetup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 31</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnSetup.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnSetup.Text" xml:space="preserve">
+    <value>Setup</value>
+  </data>
+  <data name="&gt;&gt;btnSetup.Name" xml:space="preserve">
+    <value>btnSetup</value>
+  </data>
+  <data name="&gt;&gt;btnSetup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSetup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSetup.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>605, 393</value>
+  </data>
+  <data name="btnCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 31</value>
+  </data>
+  <data name="btnCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnCheck.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;btnCheck.Name" xml:space="preserve">
+    <value>btnCheck</value>
+  </data>
+  <data name="&gt;&gt;btnCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCheck.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCheck.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="prgStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 26</value>
+  </data>
+  <data name="prgStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>656, 24</value>
+  </data>
+  <data name="prgStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;prgStatus.Name" xml:space="preserve">
+    <value>prgStatus</value>
+  </data>
+  <data name="&gt;&gt;prgStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;prgStatus.Parent" xml:space="preserve">
+    <value>Panel3</value>
+  </data>
+  <data name="&gt;&gt;prgStatus.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="grpConfigure.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;Panel3.Name" xml:space="preserve">
+    <value>Panel3</value>
+  </data>
+  <data name="&gt;&gt;Panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel3.Parent" xml:space="preserve">
+    <value>grpConfigure</value>
+  </data>
+  <data name="&gt;&gt;Panel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
+    <value>grpConfigure</value>
+  </data>
+  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Name" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Parent" xml:space="preserve">
+    <value>grpConfigure</value>
+  </data>
+  <data name="&gt;&gt;Panel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlJava.Name" xml:space="preserve">
+    <value>pnlJava</value>
+  </data>
+  <data name="&gt;&gt;pnlJava.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlJava.Parent" xml:space="preserve">
+    <value>grpConfigure</value>
+  </data>
+  <data name="&gt;&gt;pnlJava.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="grpConfigure.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 13</value>
+  </data>
+  <data name="grpConfigure.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 374</value>
+  </data>
+  <data name="grpConfigure.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="grpConfigure.Text" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="&gt;&gt;grpConfigure.Name" xml:space="preserve">
+    <value>grpConfigure</value>
+  </data>
+  <data name="&gt;&gt;grpConfigure.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpConfigure.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpConfigure.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Name" xml:space="preserve">
+    <value>lblStatus</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Parent" xml:space="preserve">
+    <value>Panel3</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 306</value>
+  </data>
+  <data name="Panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>663, 62</value>
+  </data>
+  <data name="Panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Panel3.Name" xml:space="preserve">
+    <value>Panel3</value>
+  </data>
+  <data name="&gt;&gt;Panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel3.Parent" xml:space="preserve">
+    <value>grpConfigure</value>
+  </data>
+  <data name="&gt;&gt;Panel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblStatus.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 4</value>
+  </data>
+  <data name="lblStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 18</value>
+  </data>
+  <data name="lblStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblStatus.Text" xml:space="preserve">
+    <value>Waiting...</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Name" xml:space="preserve">
+    <value>lblStatus</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Parent" xml:space="preserve">
+    <value>Panel3</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblGitStatus.Name" xml:space="preserve">
+    <value>lblGitStatus</value>
+  </data>
+  <data name="&gt;&gt;lblGitStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGitStatus.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;lblGitStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lstGit.Name" xml:space="preserve">
+    <value>lstGit</value>
+  </data>
+  <data name="&gt;&gt;lstGit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstGit.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;lstGit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblGit.Name" xml:space="preserve">
+    <value>lblGit</value>
+  </data>
+  <data name="&gt;&gt;lblGit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGit.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;lblGit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 118</value>
+  </data>
+  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>666, 89</value>
+  </data>
+  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
+    <value>grpConfigure</value>
+  </data>
+  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblGitStatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt, style=Bold</value>
+  </data>
+  <data name="lblGitStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 64</value>
+  </data>
+  <data name="lblGitStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 17</value>
+  </data>
+  <data name="lblGitStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblGitStatus.Text" xml:space="preserve">
+    <value>PENDING</value>
+  </data>
+  <data name="lblGitStatus.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblGitStatus.Name" xml:space="preserve">
+    <value>lblGitStatus</value>
+  </data>
+  <data name="&gt;&gt;lblGitStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGitStatus.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;lblGitStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lstGit.ItemHeight" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lstGit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 5</value>
+  </data>
+  <data name="lstGit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>525, 76</value>
+  </data>
+  <data name="lstGit.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lstGit.Name" xml:space="preserve">
+    <value>lstGit</value>
+  </data>
+  <data name="&gt;&gt;lstGit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstGit.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;lstGit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblGit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="lblGit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 5</value>
+  </data>
+  <data name="lblGit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 18</value>
+  </data>
+  <data name="lblGit.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblGit.Text" xml:space="preserve">
+    <value>Git:</value>
+  </data>
+  <data name="lblGit.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblGit.Name" xml:space="preserve">
+    <value>lblGit</value>
+  </data>
+  <data name="&gt;&gt;lblGit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGit.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;lblGit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudioStatus.Name" xml:space="preserve">
+    <value>lblAndroidStudioStatus</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudioStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudioStatus.Parent" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudioStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lstAndroidStudio.Name" xml:space="preserve">
+    <value>lstAndroidStudio</value>
+  </data>
+  <data name="&gt;&gt;lstAndroidStudio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstAndroidStudio.Parent" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;lstAndroidStudio.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudio.Name" xml:space="preserve">
+    <value>lblAndroidStudio</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudio.Parent" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudio.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 213</value>
+  </data>
+  <data name="Panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>666, 87</value>
+  </data>
+  <data name="Panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Name" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Parent" xml:space="preserve">
+    <value>grpConfigure</value>
+  </data>
+  <data name="&gt;&gt;Panel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblAndroidStudioStatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt, style=Bold</value>
+  </data>
+  <data name="lblAndroidStudioStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 64</value>
+  </data>
+  <data name="lblAndroidStudioStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 17</value>
+  </data>
+  <data name="lblAndroidStudioStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblAndroidStudioStatus.Text" xml:space="preserve">
+    <value>PENDING</value>
+  </data>
+  <data name="lblAndroidStudioStatus.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudioStatus.Name" xml:space="preserve">
+    <value>lblAndroidStudioStatus</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudioStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudioStatus.Parent" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudioStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lstAndroidStudio.ItemHeight" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lstAndroidStudio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 5</value>
+  </data>
+  <data name="lstAndroidStudio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>524, 76</value>
+  </data>
+  <data name="lstAndroidStudio.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lstAndroidStudio.Name" xml:space="preserve">
+    <value>lstAndroidStudio</value>
+  </data>
+  <data name="&gt;&gt;lstAndroidStudio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstAndroidStudio.Parent" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;lstAndroidStudio.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblAndroidStudio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="lblAndroidStudio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 5</value>
+  </data>
+  <data name="lblAndroidStudio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 18</value>
+  </data>
+  <data name="lblAndroidStudio.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblAndroidStudio.Text" xml:space="preserve">
+    <value>Android Studio:</value>
+  </data>
+  <data name="lblAndroidStudio.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudio.Name" xml:space="preserve">
+    <value>lblAndroidStudio</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudio.Parent" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;lblAndroidStudio.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblJavaStatus.Name" xml:space="preserve">
+    <value>lblJavaStatus</value>
+  </data>
+  <data name="&gt;&gt;lblJavaStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblJavaStatus.Parent" xml:space="preserve">
+    <value>pnlJava</value>
+  </data>
+  <data name="&gt;&gt;lblJavaStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lstJava.Name" xml:space="preserve">
+    <value>lstJava</value>
+  </data>
+  <data name="&gt;&gt;lstJava.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstJava.Parent" xml:space="preserve">
+    <value>pnlJava</value>
+  </data>
+  <data name="&gt;&gt;lstJava.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblJava.Name" xml:space="preserve">
+    <value>lblJava</value>
+  </data>
+  <data name="&gt;&gt;lblJava.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblJava.Parent" xml:space="preserve">
+    <value>pnlJava</value>
+  </data>
+  <data name="&gt;&gt;lblJava.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlJava.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 22</value>
+  </data>
+  <data name="pnlJava.Size" type="System.Drawing.Size, System.Drawing">
+    <value>666, 89</value>
+  </data>
+  <data name="pnlJava.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pnlJava.Name" xml:space="preserve">
+    <value>pnlJava</value>
+  </data>
+  <data name="&gt;&gt;pnlJava.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlJava.Parent" xml:space="preserve">
+    <value>grpConfigure</value>
+  </data>
+  <data name="&gt;&gt;pnlJava.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblJavaStatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt, style=Bold</value>
+  </data>
+  <data name="lblJavaStatus.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblJavaStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 64</value>
+  </data>
+  <data name="lblJavaStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 17</value>
+  </data>
+  <data name="lblJavaStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblJavaStatus.Text" xml:space="preserve">
+    <value>PENDING</value>
+  </data>
+  <data name="lblJavaStatus.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblJavaStatus.Name" xml:space="preserve">
+    <value>lblJavaStatus</value>
+  </data>
+  <data name="&gt;&gt;lblJavaStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblJavaStatus.Parent" xml:space="preserve">
+    <value>pnlJava</value>
+  </data>
+  <data name="&gt;&gt;lblJavaStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lstJava.ItemHeight" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lstJava.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 5</value>
+  </data>
+  <data name="lstJava.Size" type="System.Drawing.Size, System.Drawing">
+    <value>524, 76</value>
+  </data>
+  <data name="lstJava.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lstJava.Name" xml:space="preserve">
+    <value>lstJava</value>
+  </data>
+  <data name="&gt;&gt;lstJava.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstJava.Parent" xml:space="preserve">
+    <value>pnlJava</value>
+  </data>
+  <data name="&gt;&gt;lstJava.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblJava.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="lblJava.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 5</value>
+  </data>
+  <data name="lblJava.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 18</value>
+  </data>
+  <data name="lblJava.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblJava.Text" xml:space="preserve">
+    <value>Java:</value>
+  </data>
+  <data name="lblJava.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblJava.Name" xml:space="preserve">
+    <value>lblJava</value>
+  </data>
+  <data name="&gt;&gt;lblJava.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblJava.Parent" xml:space="preserve">
+    <value>pnlJava</value>
+  </data>
+  <data name="&gt;&gt;lblJava.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>711, 436</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAgIAQAAEABABoKAAAFgAAACgAAACAAAAAAAEAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAP8ADQH/ACMf/wAyM/8ASEf/AFlZ/wBnaP4Aenj/AIWD/wCcm/8AtLX/AM/P/gDk5P4A8fH+APz/
+        /gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAACu7u7u7u7u7u7u7u7du5hBEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAru7u7u7u7u7u7u7u7u7u7qYQAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK7u7u7u7u7u7u7u7u7u7u7u1xAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACu7u7u7u7u7u7u7u7u7u7u7u6zAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAru7u7u7u7u7u7u7u7u7u7u7u7DAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK7u7u7u7u7u7u7u7u7u7u7u7u7C
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACu7u7u7u7u7u7u7u7u7u7u
+        7u7u6xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAru7u7u7u7u7u7u7u
+        7u7u7u7u7u5QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEZmZmZmZmZm
+        ZmZmZmeK3u7u7u7usAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAbe7u7u7uMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAABG97u7u7nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAPu7u7u6gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAru7u7usAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZ7u7u7tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        AAAAAAAAAA7u7u7ucAAAAAAAAAAAAAAAAAAAAAAAAAAO7u7u7oAAAAAAAAAAAAAAAAAAAAAAAO7u7u7n
+        AAAAAAAAAAAAAAAO7u7u7nAAAAAAAAAAAAAAAAAAAAAAAAAADu7u7u6AAAAAAAAAAAAAAAAAAAAAAADu
+        7u7u6AAAAAAAAAAAAAAADu7u7u6AAAAAAAAAAAAAAAAAAAAAAAAAAA7u7u7ucAAAAAAAAAAAAAAAAAAA
+        AAAA7u7u7ugAAAAAAAAAAAAAAA7u7u7ugAAAAAAAAAAAAAAAAAAAAAAAAAAO7u7u7oAAAAAAAAAAAAAA
+        AAAAAAAAAO7u7u7oAAAAAAAAAAAAAAAO7u7u7oAAAAAAAAAAAAAAAAAAAAAAAAAADu7u7u6AAAAAAAAA
+        AAAAAAAAAAAAAADe7u7e6AAAAAAAAAAAAAAADu7u7u6AAAAAAAAAAAAAAAAAAAAAAAAAAA7u7u7ugAAA
+        AAAAAAAAAAAAAAAAAAABzu7u7ugAAAAAAAAAAAAAAA7u7u7ugAAAAAAAAAAAAAAAAAAAAAAAAAAO7u7u
+        7oAAAAAAAAAAAAAAAAAAAAAAAL7u7u7pAAAAAAAAAAAAAAAO7u7u7nAAAAAAAAAAAAAAAAAAAAAAAAAA
+        Du7u7u6AAAAAAAAAAAAAAAAAAAAAAACu7u7u6xAAAAAAAAAAAAAADu7u7u6AAAAAAAAAAAAAAAAAAAAA
+        AAAAAA7u7u7ucAAAAAAAAAAAAAAAAAAAAAAAju7u7u0QAAAAAAAAAAAAAA7u7u7ugAAAAAAAAAAAAAAA
+        AAAAAAAAAAAO7u7u7oAAAAAAAAAAAAAAAAAAAAAAAV7u7u7ugAAAAAAAAAAAAAAO7u7u7oAAAAAAAAAA
+        AAAAAAAAAAAAAAAADu7u7u6AAAAAAAAAAAAAAAAAAAAAAAAe7u7u7uUAAAAAAAAAAAAADu7u7u6AAAAA
+        AAAAAAAAAAAAAAAAAAAAAA7u7u7ugAAAAAAAAAAAAAAAAAAAAAAACu7u7u7ukgAQAAAAAAAAAA7u7u7u
+        gAAAAAAAAAAAAAAAAAAAAAAAAAAO7u7u7oAAAAAAAAAAAAAAAAAAAAAAAAXu7u7u7u65dmZmZmZmZmZu
+        7u7u7nAAAAAAAAAAAAAAAAAAAAAAAAAADu7u7u6AAAAAAAAAAAAAAAAAAAAAAAAAvu7u7u7u7u7u7u7u
+        7u7u7u7u7u6AAAAAAAAAAAAAAAAAAAAAAAAAAA7u7u7ucAAAAAAAAAAAAAAAAAAAAAAAAE7u7u7u7u7u
+        7u7u7u7u7u7u7u7ugAAAAAAAAAAAAAAAAAAAAAAAAAAO7u7t7oAAAAAAAAAAAAAAAAAAAAAAAAAI7u7u
+        7u7u7u7u7u7u7u7u7u7u7oAAAAAAAAAAAAAAAAAAAAAAAAAADu7u7u6AAAAAAAAAAAAAAAAAAAAAAAAA
+        AJ7u7u7u7u7u7u7u7u7u7u7u7u6AAAAAAAAAAAAAAAAAAAAAAAAAAA7u7u7ugAAAAAAAAAAAAAAAAAAA
+        AAAAAAAH3u7u7u7u7u7u7u7u7u7u7u7ugAAAAAAAAAAAAAAAAAAAAAAAAAAO7u7u7oAAAAAAAAAAAAAA
+        AAAAAAAAAAAAACru7u7u7u7u7u7u7u7u7u7u7nAAAAAAAAAAAAAAAAAAAAAAAAAADu7u7u6AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAOc7u7u7u7u7u7u7u7u7u7u6AAAAAAAAAAAAAAAAAAAAAAAAAAA7u7u7ucAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAASaavN3u7u7u7u7u7u7u7ugAAAAAAAAAAAAAAAAAAAAAAAAAAO7u7u
+        7oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        Du7u7u6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAA7u7u7ugAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAO7u7u7oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAADe7u7u6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAzu7u7ugAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAb7u7u7pAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACe7u7u7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfu7u7u5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE7u7u7uoAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd7u7u7ugAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACe7u7u7ukQAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPu7u7u7utQAQAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAru7u7u7u7KhmZm
+        ZmZmZmZmYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC3u7u7u7u
+        7u7u7u7u7u7u7uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF7u
+        7u7u7u7u7u7u7u7u7u7gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAI7u7u7u7u7u7u7u7u7u7u4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAH7u7u7u7u7u7u7u7u7u7uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAEzu7u7t7u7u7u7u7u7u7gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAABje7u7u7u7u7u7u7u7u4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAFr3u7u7u7u7u7u7u7uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABV6vN3u7u7u7u7u7gAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>GUI</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

@@ -123,10 +123,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblJavaLinkDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 59</value>
+    <value>147, 58</value>
   </data>
   <data name="lblJavaLinkDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 20</value>
+    <value>168, 18</value>
   </data>
   <data name="lblJavaLinkDescription.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -150,10 +150,10 @@
     <value>True</value>
   </data>
   <data name="llblJavaDownload.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 59</value>
+    <value>321, 58</value>
   </data>
   <data name="llblJavaDownload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 26</value>
+    <value>206, 24</value>
   </data>
   <data name="llblJavaDownload.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -177,10 +177,10 @@
     <value>True</value>
   </data>
   <data name="chkAndroidStudioDownload.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 186</value>
+    <value>150, 185</value>
   </data>
   <data name="chkAndroidStudioDownload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 24</value>
+    <value>236, 22</value>
   </data>
   <data name="chkAndroidStudioDownload.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -204,10 +204,10 @@
     <value>True</value>
   </data>
   <data name="chkGitDownload.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 122</value>
+    <value>150, 120</value>
   </data>
   <data name="chkGitDownload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 24</value>
+    <value>236, 22</value>
   </data>
   <data name="chkGitDownload.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -228,10 +228,10 @@
     <value>3</value>
   </data>
   <data name="txtGitSetupPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 88</value>
+    <value>150, 88</value>
   </data>
   <data name="txtGitSetupPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>494, 28</value>
+    <value>494, 26</value>
   </data>
   <data name="txtGitSetupPath.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -249,10 +249,10 @@
     <value>4</value>
   </data>
   <data name="btnInstall.Location" type="System.Drawing.Point, System.Drawing">
-    <value>598, 210</value>
+    <value>576, 227</value>
   </data>
   <data name="btnInstall.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 56</value>
+    <value>174, 45</value>
   </data>
   <data name="btnInstall.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -273,10 +273,10 @@
     <value>5</value>
   </data>
   <data name="btnAndroidStudioSetupPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>672, 147</value>
+    <value>650, 154</value>
   </data>
   <data name="btnAndroidStudioSetupPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 36</value>
+    <value>100, 25</value>
   </data>
   <data name="btnAndroidStudioSetupPath.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -297,10 +297,10 @@
     <value>6</value>
   </data>
   <data name="txtAndroidStudioISetupPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 152</value>
+    <value>150, 153</value>
   </data>
   <data name="txtAndroidStudioISetupPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>494, 28</value>
+    <value>494, 26</value>
   </data>
   <data name="txtAndroidStudioISetupPath.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -318,10 +318,10 @@
     <value>7</value>
   </data>
   <data name="btnGitSetupPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 82</value>
+    <value>650, 88</value>
   </data>
   <data name="btnGitSetupPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 38</value>
+    <value>100, 26</value>
   </data>
   <data name="btnGitSetupPath.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -342,10 +342,10 @@
     <value>8</value>
   </data>
   <data name="txtJDK_SetupPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 28</value>
+    <value>150, 29</value>
   </data>
   <data name="txtJDK_SetupPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>494, 28</value>
+    <value>494, 26</value>
   </data>
   <data name="txtJDK_SetupPath.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -363,10 +363,10 @@
     <value>9</value>
   </data>
   <data name="btnJDK_Search.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 25</value>
+    <value>650, 29</value>
   </data>
   <data name="btnJDK_Search.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 35</value>
+    <value>100, 26</value>
   </data>
   <data name="btnJDK_Search.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -393,7 +393,7 @@
     <value>6, 154</value>
   </data>
   <data name="chkAndroidStudio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 24</value>
+    <value>138, 22</value>
   </data>
   <data name="chkAndroidStudio.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -420,7 +420,7 @@
     <value>6, 90</value>
   </data>
   <data name="chkGit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 24</value>
+    <value>51, 22</value>
   </data>
   <data name="chkGit.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -447,7 +447,7 @@
     <value>6, 31</value>
   </data>
   <data name="chkJDK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 24</value>
+    <value>58, 22</value>
   </data>
   <data name="chkJDK.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -471,7 +471,7 @@
     <value>12, 12</value>
   </data>
   <data name="grpInstall.Size" type="System.Drawing.Size, System.Drawing">
-    <value>778, 278</value>
+    <value>758, 278</value>
   </data>
   <data name="grpInstall.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -495,10 +495,10 @@
     <value>True</value>
   </data>
   <data name="radOfficialRepo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>181, 55</value>
+    <value>160, 53</value>
   </data>
   <data name="radOfficialRepo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 24</value>
+    <value>108, 22</value>
   </data>
   <data name="radOfficialRepo.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -522,10 +522,10 @@
     <value>True</value>
   </data>
   <data name="radCommunityRepo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>181, 82</value>
+    <value>160, 80</value>
   </data>
   <data name="radCommunityRepo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 24</value>
+    <value>200, 22</value>
   </data>
   <data name="radCommunityRepo.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -546,10 +546,10 @@
     <value>1</value>
   </data>
   <data name="cmbRepoList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>413, 81</value>
+    <value>366, 79</value>
   </data>
   <data name="cmbRepoList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>358, 28</value>
+    <value>384, 26</value>
   </data>
   <data name="cmbRepoList.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -567,10 +567,10 @@
     <value>2</value>
   </data>
   <data name="btnClone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>672, 115</value>
+    <value>574, 114</value>
   </data>
   <data name="btnClone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 42</value>
+    <value>176, 45</value>
   </data>
   <data name="btnClone.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -591,10 +591,10 @@
     <value>3</value>
   </data>
   <data name="btnFTC_Browse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>666, 17</value>
+    <value>645, 21</value>
   </data>
   <data name="btnFTC_Browse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 35</value>
+    <value>105, 26</value>
   </data>
   <data name="btnFTC_Browse.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -615,10 +615,10 @@
     <value>4</value>
   </data>
   <data name="txtFTC_ClonePath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>181, 21</value>
+    <value>160, 21</value>
   </data>
   <data name="txtFTC_ClonePath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>479, 28</value>
+    <value>479, 26</value>
   </data>
   <data name="txtFTC_ClonePath.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -642,7 +642,7 @@
     <value>6, 24</value>
   </data>
   <data name="lblFTC_ClonePath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 20</value>
+    <value>148, 18</value>
   </data>
   <data name="lblFTC_ClonePath.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -662,11 +662,14 @@
   <data name="&gt;&gt;lblFTC_ClonePath.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="grpGitRepo.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="grpGitRepo.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 296</value>
   </data>
   <data name="grpGitRepo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>778, 165</value>
+    <value>758, 165</value>
   </data>
   <data name="grpGitRepo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -690,7 +693,7 @@
     <value>12, 487</value>
   </data>
   <data name="prgStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>674, 35</value>
+    <value>656, 35</value>
   </data>
   <data name="prgStatus.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -714,7 +717,7 @@
     <value>12, 464</value>
   </data>
   <data name="lblStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 20</value>
+    <value>76, 18</value>
   </data>
   <data name="lblStatus.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -735,7 +738,7 @@
     <value>1</value>
   </data>
   <data name="btnAbort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>692, 487</value>
+    <value>678, 487</value>
   </data>
   <data name="btnAbort.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 35</value>
@@ -765,10 +768,10 @@
     <value>120, 120</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>802, 534</value>
+    <value>781, 534</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 10pt</value>
+    <value>Verdana, 9pt</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
