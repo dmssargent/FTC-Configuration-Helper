@@ -199,7 +199,18 @@
 
 
     Public Sub Installer()
-        Dim packageDetails() As InstallerDetails = {New InstallerDetails(), New InstallerDetails()}
+        ''Temp
+        'Dim downloads() As DownloadDetails = {New DownloadDetails("Android Studio", ANDROID_STUDIO_DOWNLOAD_URL, _
+        '                                                          "9730ba606c4bfc7bc6f1acf6288ea49704bf92925db2a44b3d6b03a598f14f2ab9b9ccc2dd8a764bb90bcd0595011de8e8ea8e2efc7f4d5a6baa05a7ffef3791", _
+        '                                                          "android-studio-setup.exe"), _
+        '                                      New DownloadDetails("Git", GIT_DOWNLOAD_URL, _
+        '                                                          "f046629b9a390ec22122fb96fea43c6a6b79458b1a754090cf00f8f0c005b9777859aec7a1221f55d9ddf553c4d6282ef3c831b7d1442584af85f08494a275cd", _
+        '                                                          "git-setup.exe")}
+        'WriteDownloads(downloads)
+        'MsgBox("Done!")
+        ''End temp
+        Dim downloadDetails() As DownloadDetails = Me.ReadDownloads()
+        Dim packageDetails(downloadDetails.Length - 1) As InstallerDetails
         Dim downloadTasks(packageDetails.Length - 1) As Task
 
         Dim setupDir As String = My.Computer.FileSystem.SpecialDirectories.Temp & "\FTC-Setup-Helper\"
@@ -210,44 +221,44 @@
 
         For i As Integer = 0 To packageDetails.Length - 1
             packageDetails(i).caller = Me.callerGUI
+            packageDetails(i).filePath = downloadDir & downloadDetails(i).File
+            packageDetails(i).displayName = downloadDetails(i).setupName
+            packageDetails(i).downloadURL = downloadDetails(i).FetchUrl
+        Next i
+
+        For i As Integer = 0 To downloadTasks.Length - 1
+            downloadTasks(i) = New Task(AddressOf Downloader.GetInstaller, packageDetails(i))
         Next
 
         If callerGUI.chkAndroidStudioDownload.Checked And callerGUI.chkAndroidStudio.Checked Then
-            packageDetails(0).filePath = downloadDir & "android-studio-setup.exe"
-            If Not My.Computer.FileSystem.FileExists(downloadDir & "android-studio-setup.exe") Then
-                packageDetails(0).downloadURL = ANDROID_STUDIO_DOWNLOAD_URL
-                packageDetails(0).displayName = "Android Studio Setup"
-                'callerGUI.btnAbort.Enabled = True
-            ElseIf MsgBox("Android Studio Setup has already been downloaded. Do you want to get it again?", _
+            If My.Computer.FileSystem.FileExists(packageDetails(0).filePath) Then
+                If MsgBox(packageDetails(0).displayName & " Setup has already been downloaded. Do you want to get it again?", _
                          MsgBoxStyle.YesNo + MsgBoxStyle.Question) = MsgBoxResult.Yes Then
-                packageDetails(0).downloadURL = ANDROID_STUDIO_DOWNLOAD_URL
-                packageDetails(0).displayName = "Android Studio Setup"
-                'callerGUI.btnAbort.Enabled = True
+                    downloadTasks(0).Start()
+                End If
+            Else
+                downloadTasks(0).Start()
             End If
         End If
 
         If callerGUI.chkGit.Checked And callerGUI.chkGitDownload.Checked Then
-            packageDetails(1).filePath = downloadDir & "git-setup.exe"
-            If Not My.Computer.FileSystem.FileExists(downloadDir & "git-setup.exe") Then
-                packageDetails(1).downloadURL = GIT_DOWNLOAD_URL
-                packageDetails(1).displayName = "Git Setup"
-                'callerGUI.btnAbort.Enabled = True
-            ElseIf MsgBox("Git Setup has already been downloaded. Do you want to get it again?", _
+            If (My.Computer.FileSystem.FileExists(packageDetails(1).filePath)) Then
+                If MsgBox(packageDetails(1).displayName & " has already been downloaded. Do you want to get it again?", _
                           MsgBoxStyle.YesNo + MsgBoxStyle.Question) = MsgBoxResult.Yes Then
-                packageDetails(1).downloadURL = GIT_DOWNLOAD_URL
-                packageDetails(1).displayName = "Git Setup"
+                    downloadTasks(1).Start()
+                Else
+
+                End If
+            Else
+                downloadTasks(1).Start()
             End If
         End If
 
-        For i As Integer = 0 To packageDetails.Length - 1
-            downloadTasks(i) = New Task(AddressOf Downloader.GetInstaller, packageDetails(i))
-            downloadTasks(i).Start()
-        Next
 
         'Wait for download completion
         Dim statusThread As New Threading.Thread(Sub()
                                                      For i As Integer = 0 To downloadTasks.Length - 1
-                                                         If Not downloadTasks(i).IsCompleted Then
+                                                         If Not downloadTasks(i).Status = TaskStatus.RanToCompletion And downloadTasks(i).Status = TaskStatus.Running Then
                                                              downloadTasks(i).Wait()
                                                          End If
                                                      Next
@@ -256,6 +267,12 @@
         statusThread.Priority = Threading.ThreadPriority.Lowest
         statusThread.Start()
         statusThread.Join()
+
+        If callerGUI.abort Then
+            MsgBox("Aborted", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
+            callerGUI.SetStatusText("Aborted!")
+            Exit Sub
+        End If
 
         'Remember to only read values from the Form
         If callerGUI.chkJDK.Checked Then
@@ -319,5 +336,48 @@
 
     Private Function IsAborted() As Boolean
         Return callerGUI.abort
+    End Function
+
+    Private Sub WriteDownloads(ByRef downloads() As DownloadDetails)
+        Dim fileStream As New IO.FileStream("downloads.xml", IO.FileMode.Create)
+        Dim serializer As New System.Xml.Serialization.XmlSerializer(GetType(DownloadDetails.saveState()))
+
+        Dim save(downloads.Length - 1) As DownloadDetails.saveState
+        For i As Integer = 0 To downloads.Length - 1
+            save(i) = downloads(i).BuildSave
+        Next
+
+        Try
+            serializer.Serialize(fileStream, save)
+        Catch e As Runtime.Serialization.SerializationException
+            MsgBox("Write failed:" & vbCrLf & e.ToString, MsgBoxStyle.Critical)
+        Catch e As Exception
+            MsgBox("An unknown exception occurred while writing" & vbCrLf & e.ToString)
+            Throw
+
+        Finally
+            fileStream.Close()
+            fileStream.Dispose()
+        End Try
+    End Sub
+
+    Private Function ReadDownloads() As DownloadDetails()
+        Dim fileStream As IO.FileStream
+        Try
+            fileStream = New IO.FileStream("downloads.xml", IO.FileMode.Open)
+        Catch ex As IO.FileNotFoundException
+            MsgBox("I cannot find out what to download! Missing 'downloads.xml' in current directory.", MsgBoxStyle.Critical)
+            Throw
+        End Try
+
+        Dim serializer As New System.Xml.Serialization.XmlSerializer(GetType(DownloadDetails.saveState()))
+
+        Dim details() As DownloadDetails.saveState = serializer.Deserialize(fileStream)
+        Dim downloads(details.Length - 1) As DownloadDetails
+        For i As Integer = 0 To details.Length - 1
+            downloads(i) = DownloadDetails.LoadSaved(details(i))
+        Next
+
+        Return downloads
     End Function
 End Class
