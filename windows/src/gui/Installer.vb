@@ -46,11 +46,8 @@
                 Return path
             End Get
             Set(value As String)
-                If My.Computer.FileSystem.FileExists(value) Then
-                    path = value
-                Else
-                    Throw New System.IO.FileNotFoundException
-                End If
+
+                path = value
             End Set
         End Property
 
@@ -209,7 +206,13 @@
         'WriteDownloads(downloads)
         'MsgBox("Done!")
         ''End temp
-        Dim downloadDetails() As DownloadDetails = Me.ReadDownloads()
+        Dim downloadDetails() As DownloadDetails
+        Try
+            downloadDetails = ReadDownloads()
+        Catch e As Exception
+            MsgBox("Setup cannot continue.")
+            Exit Sub
+        End Try
         Dim packageDetails(downloadDetails.Length - 1) As InstallerDetails
         Dim downloadTasks(packageDetails.Length - 1) As Task
 
@@ -220,10 +223,29 @@
         My.Computer.FileSystem.CreateDirectory(downloadDir)
 
         For i As Integer = 0 To packageDetails.Length - 1
-            packageDetails(i).caller = Me.callerGUI
+            packageDetails(i).caller = callerGUI
             packageDetails(i).filePath = downloadDir & downloadDetails(i).File
+
             packageDetails(i).displayName = downloadDetails(i).setupName
             packageDetails(i).downloadURL = downloadDetails(i).FetchUrl
+        Next i
+
+        For i As Integer = 0 To packageDetails.Length - 1
+            If packageDetails(i).filePath = Nothing Then
+                For j As Integer = 0 To 1
+                    packageDetails(i).filePath = downloadDir & downloadDetails(i).File
+                    If packageDetails(i).filePath = Nothing Then
+                        Continue For
+                    Else
+                        Exit For
+                    End If
+                Next j
+            End If
+
+            If packageDetails(i).filePath = Nothing Then
+                MsgBox("Invalid filepath was entered. This may be a bug. Cannot continue.")
+                Exit Sub
+            End If
         Next i
 
         For i As Integer = 0 To downloadTasks.Length - 1
@@ -232,7 +254,7 @@
 
         If callerGUI.chkAndroidStudioDownload.Checked And callerGUI.chkAndroidStudio.Checked Then
             If My.Computer.FileSystem.FileExists(packageDetails(0).filePath) Then
-                If MsgBox(packageDetails(0).displayName & " Setup has already been downloaded. Do you want to get it again?", _
+                If MsgBox(packageDetails(0).displayName & " Setup has already been downloaded. Do you want to get it again?",
                          MsgBoxStyle.YesNo + MsgBoxStyle.Question) = MsgBoxResult.Yes Then
                     downloadTasks(0).Start()
                 End If
@@ -243,7 +265,7 @@
 
         If callerGUI.chkGit.Checked And callerGUI.chkGitDownload.Checked Then
             If (My.Computer.FileSystem.FileExists(packageDetails(1).filePath)) Then
-                If MsgBox(packageDetails(1).displayName & " has already been downloaded. Do you want to get it again?", _
+                If MsgBox(packageDetails(1).displayName & " has already been downloaded. Do you want to get it again?",
                           MsgBoxStyle.YesNo + MsgBoxStyle.Question) = MsgBoxResult.Yes Then
                     downloadTasks(1).Start()
                 Else
@@ -276,7 +298,7 @@
 
         'Remember to only read values from the Form
         If callerGUI.chkJDK.Checked Then
-            If My.Computer.FileSystem.FileExists(callerGUI.txtJDK_SetupPath.Text) Then
+            If My.MyProject.Computer.FileSystem.FileExists(callerGUI.txtJDK_SetupPath.Text) Then
                 callerGUI.prgStatusClear()
                 callerGUI.SetStatusText("Installing JDK...")
                 callerGUI.prgStatusStep(50)
@@ -368,6 +390,9 @@
         Catch ex As IO.FileNotFoundException
             MsgBox("I cannot find out what to download! Missing 'downloads.xml' in current directory.", MsgBoxStyle.Critical)
             Throw
+        Catch ex As IO.IOException
+            MsgBox("An error occurred accessing the file.")
+            Throw
         End Try
 
         Dim serializer As New System.Xml.Serialization.XmlSerializer(GetType(DownloadDetails.saveState()))
@@ -378,6 +403,7 @@
             downloads(i) = DownloadDetails.LoadSaved(details(i))
         Next
 
+        fileStream.Dispose()
         Return downloads
     End Function
 End Class
