@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ArrayOfSaveState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <saveState name="Android Studio" url="https://dl.google.com/dl/android/studio/install/1.2.2.0/android-studio-bundle-141.1980579-windows.exe" checksum="9730ba606c4bfc7bc6f1acf6288ea49704bf92925db2a44b3d6b03a598f14f2ab9b9ccc2dd8a764bb90bcd0595011de8e8ea8e2efc7f4d5a6baa05a7ffef3791" filename="android-studio-setup.exe" />
+  <saveState name="Git" url="https://github.com/msysgit/msysgit/releases/download/Git-1.9.5-preview20150319/Git-1.9.5-preview20150319.exe" checksum="f046629b9a390ec22122fb96fea43c6a6b79458b1a754090cf00f8f0c005b9777859aec7a1221f55d9ddf553c4d6282ef3c831b7d1442584af85f08494a275cd" filename="git-setup.exe" />
+</ArrayOfSaveState>

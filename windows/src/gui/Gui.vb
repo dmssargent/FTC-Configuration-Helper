@@ -205,10 +205,11 @@ Public Class GUI
     Private Sub llblJavaDownload_Click(sender As Object, e As EventArgs) Handles llblJavaDownload.Click
         Dim browserLauch As Threading.Thread = New Threading.Thread(Sub()
                                                                         Dim browser As New Process()
-                                                                        browser.StartInfo.FileName = installer.JAVA_DOWNLOAD_URL
+                                                                        browser.StartInfo.FileName = Installer.JAVA_DOWNLOAD_URL
                                                                         browser.Start()
                                                                         browser.WaitForExit()
                                                                         browser.Dispose()
                                                                     End Sub)
+        browserLauch.Start()
     End Sub
 End Class
